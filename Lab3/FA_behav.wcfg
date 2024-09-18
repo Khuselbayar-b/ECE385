@@ -5,22 +5,22 @@
    <db_ref_list>
       <db_ref path="testbench8_behav.wdb" id="1">
          <top_modules>
-            <top_module name="\$unit_adder_toplevel_sv_374105151 " />
+            <top_module name="\$unit_adder_toplevel_sv_3488477297 " />
             <top_module name="glbl" />
             <top_module name="testbench8" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="999,997 ps"></ZoomStartTime>
-      <ZoomEndTime time="1,000,003 ps"></ZoomEndTime>
-      <Cursor1Time time="999,997 ps"></Cursor1Time>
+      <ZoomStartTime time="477,184,130.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="477,187,650.001 ns"></ZoomEndTime>
+      <Cursor1Time time="477,186,825.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="148"></NameColumnWidth>
-      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/testbench8/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -65,5 +65,9 @@
    <wvobject fp_name="/testbench8/processor0/s" type="array">
       <obj_property name="ElementShortName">s[16:0]</obj_property>
       <obj_property name="ObjectShortName">s[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench8/processor0/adder_la/s" type="array">
+      <obj_property name="ElementShortName">s[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s[15:0]</obj_property>
    </wvobject>
 </wave_config>
