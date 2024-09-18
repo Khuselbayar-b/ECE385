@@ -1,0 +1,44 @@
+module fa (input logic a, b, c,
+            output logic s, c_out);
+     always_comb  begin
+        s = a^b^c;
+        c_out = (a&b)|(b|c)|(a&c);
+     end        
+endmodule;
+
+module ripple_adder_4 (input logic [3:0] a, b,
+                       input logic c_in,
+                       output logic [3:0] s,
+                       output logic cout);
+                       
+          logic c1, c2, c3;
+          fa f0 (.a(a[0]), .b(b[0]), .c(c_in), .s(s[0]), .c_out(c1));
+          fa f1 (.a(a[1]), .b(b[1]), .c(c1), .s(s[1]), .c_out(c2));  
+          fa f2 (.a(a[2]), .b(b[2]), .c(c2), .s(s[2]), .c_out(c3));
+          fa f3 (.a(a[3]), .b(b[3]), .c(c3),  .s(s[3]), .c_out(cout));  
+                       
+endmodule;
+
+module ripple_adder (
+	input  logic  [15:0] a, 
+    input  logic  [15:0] b,
+	input  logic         cin,
+	
+	output logic  [15:0] s,
+	output logic         cout
+);
+
+	/* TODO
+		*
+		* Insert code here to implement a ripple adder.
+		* Your code should be completly combinational (don't use always_ff or always_latch).
+		* Feel free to create sub-modules or other files. */
+	
+	logic c4, c8, c12;
+	ripple_adder_4 ra4_0 (.a(a[3:0]),   .b(b[3:0]), .c_in(cin), .cout(c4));
+	ripple_adder_4 ra4_1 (.a(a[7:4]),   .b(b[7:4]), .c_in(c4), .cout(c8));
+	ripple_adder_4 ra4_2 (.a(a[11:8]),  .b(b[11:8]),   .c_in(c8), .cout(c12));
+	ripple_adder_4 ra4_3 (.a(a[15:12]), .b(b[15:12]), .c_in(c12), .cout(cout));
+	
+    
+endmodule
