@@ -1,0 +1,28 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench8_behav xil_defaultlib.testbench8 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/kb40/Desktop/ECE385/lab2.2/lab2.2.srcs/sim_1/imports/sim_sources/testbench_8.sv" Line 1. Module testbench8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/kb40/Desktop/ECE385/lab2.2/lab2.2.srcs/sim_1/imports/sim_sources/testbench_8.sv" Line 1. Module testbench8 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/kb40/Desktop/ECE385/Lab3/Lab3.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/kb40/Desktop/ECE385/Lab3/Lab3.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_adder_toplevel_sv_37410515...
+Compiling module xil_defaultlib.negedge_detector
+Compiling module xil_defaultlib.load_reg(DATA_WIDTH=17)
+Compiling module xil_defaultlib.fa
+Compiling module xil_defaultlib.ripple_adder_4
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.nibble_to_hex
+Compiling module xil_defaultlib.hex_driver_default
+Compiling module xil_defaultlib.sync_debounce
+Compiling module xil_defaultlib.load_reg(DATA_WIDTH=16)
+Compiling module xil_defaultlib.adder_toplevel_default
+Compiling module xil_defaultlib.testbench8
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench8_behav

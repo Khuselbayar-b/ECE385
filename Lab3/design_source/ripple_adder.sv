@@ -2,7 +2,7 @@ module fa (input logic a, b, c,
             output logic s, c_out);
      always_comb  begin
         s = a^b^c;
-        c_out = (a&b)|(b|c)|(a&c);
+        c_out = (a&b)|(b&c)|(a&c);
      end        
 endmodule;
 
@@ -35,10 +35,10 @@ module ripple_adder (
 		* Feel free to create sub-modules or other files. */
 	
 	logic c4, c8, c12;
-	ripple_adder_4 ra4_0 (.a(a[3:0]),   .b(b[3:0]), .c_in(cin), .cout(c4));
-	ripple_adder_4 ra4_1 (.a(a[7:4]),   .b(b[7:4]), .c_in(c4), .cout(c8));
-	ripple_adder_4 ra4_2 (.a(a[11:8]),  .b(b[11:8]),   .c_in(c8), .cout(c12));
-	ripple_adder_4 ra4_3 (.a(a[15:12]), .b(b[15:12]), .c_in(c12), .cout(cout));
+	ripple_adder_4 ra4_0 (.a(a[3:0]),   .b(b[3:0]),    .c_in(cin), .s(s[3:0]), .cout(c4));
+	ripple_adder_4 ra4_1 (.a(a[7:4]),   .b(b[7:4]), .c_in(c4), .s(s[7:4]), .cout(c8));
+	ripple_adder_4 ra4_2 (.a(a[11:8]),  .b(b[11:8]),   .c_in(c8),  .s(s[11:8]), .cout(c12));
+	ripple_adder_4 ra4_3 (.a(a[15:12]), .b(b[15:12]), .c_in(c12),  .s(s[15:12]), .cout(cout));
 	
     
 endmodule

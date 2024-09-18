@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/kb40/Desktop/ECE385/Lab3/Lab3.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/Lab3/design_source/adder_toplevel.sv,1726614580,systemVerilog,C:/Users/kb40/Desktop/ECE385/Lab3/design_source/hex_driver.sv;C:/Users/kb40/Desktop/ECE385/Lab3/design_source/load_reg.sv;C:/Users/kb40/Desktop/ECE385/Lab3/design_source/negedge_detector.sv;C:/Users/kb40/Desktop/ECE385/Lab3/design_source/ripple_adder.sv;C:/Users/kb40/Desktop/ECE385/Lab3/design_source/sync_debounce.sv;C:/Users/kb40/Desktop/ECE385/lab2.2/lab2.2.srcs/sim_1/imports/sim_sources/testbench_8.sv,C:/Users/kb40/Desktop/ECE385/Lab3/design_source/hex_driver.sv,,$unit_adder_toplevel_sv_374105151;adder_toplevel,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/Lab3/design_source/hex_driver.sv,1726614580,systemVerilog,,C:/Users/kb40/Desktop/ECE385/Lab3/design_source/load_reg.sv,,hex_driver,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/Lab3/design_source/load_reg.sv,1726614580,systemVerilog,,C:/Users/kb40/Desktop/ECE385/Lab3/design_source/negedge_detector.sv,,load_reg,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/Lab3/design_source/negedge_detector.sv,1726614580,systemVerilog,,C:/Users/kb40/Desktop/ECE385/Lab3/design_source/ripple_adder.sv,,negedge_detector,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/Lab3/design_source/ripple_adder.sv,1726622125,systemVerilog,,C:/Users/kb40/Desktop/ECE385/Lab3/design_source/sync_debounce.sv,,fa;ripple_adder;ripple_adder_4,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/Lab3/design_source/sync_debounce.sv,1726614580,systemVerilog,,C:/Users/kb40/Desktop/ECE385/lab2.2/lab2.2.srcs/sim_1/imports/sim_sources/testbench_8.sv,,sync_debounce,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/lab2.2/lab2.2.srcs/sim_1/imports/sim_sources/testbench_8.sv,1726621817,systemVerilog,,,,testbench8,,uvm,,,,,,
