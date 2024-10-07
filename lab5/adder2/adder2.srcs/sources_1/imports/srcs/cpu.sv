@@ -90,8 +90,6 @@ control cpu_control (
 
     .continue_i(continue_i),
 	.run_i(run_i),
-	
-	.n(n), .z(z), .p(p),
 
 	.ld_mar(ld_mar),
 	.ld_mdr(ld_mdr),

@@ -68,27 +68,16 @@ module testbench8(); //even though the testbench doesn't create any hardware, it
 	// we do not want any dependencies to arise between different assignments in the 
 	// same simulation timestep. The exception is for reset, which we want to make sure
 	// happens first. 
-	initial begin: TEST_VECTORS
-	       
+	
+initial begin: TEST_VECTORS
+//	 -2 * 3       
 		SW <= 8'b11000101;
 		#10
 		Reset_Load_Clear <= 1;
 		#10
 		Reset_Load_Clear <= 0;
 		#10
-//		SW <= 8'b11111111;
-//		#10
-//		Run = 1;
-//		#10
-//		Run = 0;
-//		#100
-//		SW <= 8'b11000101;
-//		#10
-//		Run = 1;
-//		#10
-//		Run = 0;
-//		#100
-		SW <= 8'b00000111;
+		SW <= 8'b11111001;
 		#10
 		Run = 1;
 		#10
@@ -97,5 +86,81 @@ module testbench8(); //even though the testbench doesn't create any hardware, it
         $finish();
     end
 
+//initial begin: TEST_VECTORS
+	      // -3 * 2 
+//		SW <= 8'b11111101;
+//		#10
+//		Reset_Load_Clear <= 1;
+//		#10
+//		Reset_Load_Clear <= 0;
+//		#10
+//		SW <= 8'b00000010;
+//		#10
+//		Run = 1;
+//		#10
+//		Run = 0;
+//		#100
+//        $finish();
+//    end
+    
+//    initial begin: TEST_VECTORS
+	   // 3 * 2    
+//		SW <= 8'b00000011;
+//		#10
+//		Reset_Load_Clear <= 1;
+//		#10
+//		Reset_Load_Clear <= 0;
+//		#10
+//		SW <= 8'b00000010;
+//		#10
+//		Run = 1;
+//		#10
+//		Run = 0;
+//		#100
+//        $finish();
+//    end
+    
+    // -3 * -2
+//    initial begin: TEST_VECTORS
+	       
+//		SW <= 8'b11111101;
+//		#10
+//		Reset_Load_Clear <= 1;
+//		#10
+//		Reset_Load_Clear <= 0;
+//		#10
+//		SW <= 8'b11111110;
+//		#10
+//		Run = 1;
+//		#10
+//		Run = 0;
+//		#100
+//        $finish();
+//    end
+    
+    // -3 * -2 * 2
+//     initial begin: TEST_VECTORS
+	       
+//		SW <= 8'b11111101;
+//		#10
+//		Reset_Load_Clear <= 1;
+//		#10
+//		Reset_Load_Clear <= 0;
+//		#10
+//		SW <= 8'b11111110;
+//		#10
+//		Run = 1;
+//		#10
+//		Run = 0;
+//		#50
+//		SW <= 8'b00000010;
+//		#10
+//		Run = 1;
+//		#10
+//		Run = 0;
+//		#100
+//        $finish();
+//    end
+    
 endmodule
 

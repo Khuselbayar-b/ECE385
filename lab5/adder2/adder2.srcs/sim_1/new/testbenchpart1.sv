@@ -76,7 +76,6 @@ module testbenchpart1();
 		#10
 		run_i <= 0;
 		#50
-		
         $finish();
         end
    

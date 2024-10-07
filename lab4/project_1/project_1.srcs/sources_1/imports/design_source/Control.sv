@@ -9,12 +9,14 @@ module control (
 	output logic Clr_Ld, 
 	output logic Shift,
 	output logic Add,
-	output logic Sub
+	output logic Sub,
+	output logic clearXA
 );
 
 	enum logic [4:0] {
 	    reset,
 		s_start, 
+		clear_xa,
 		a1, 
 		s1, 
 		a2, 
@@ -43,6 +45,20 @@ module control (
 				Sub = 1'b0;
 				Shift = 1'b0;
 				Clr_Ld = 1'b0;
+				clearXA = 1'b0;
+//				if (Reset == 1'b1)
+//				    Clr_Ld = 1'b1;
+//				else 
+//				    Clr_Ld = 1'b0;
+			end
+			
+			clear_xa: 
+			begin
+				Add = 1'b0;
+				Sub = 1'b0;
+				Shift = 1'b0;
+				Clr_Ld = 1'b0;
+				clearXA = 1'b1;
 //				if (Reset == 1'b1)
 //				    Clr_Ld = 1'b1;
 //				else 
@@ -55,6 +71,7 @@ module control (
 				Sub = 1'b0;
 				Shift = 1'b0;
 				Clr_Ld = 1'b1;
+				clearXA = 1'b0;
 			end
 			
 			a8:
@@ -64,12 +81,14 @@ module control (
 				Shift = 1'b0;
 		        Clr_Ld = 1'b0;
 		        Add = 1'b0;
+		        clearXA = 1'b0;
 		        end
 		      else begin
 				Sub = 1'b0;
 				Shift = 1'b0;
 		        Clr_Ld = 1'b0;
 		        Add = 1'b0;
+		        clearXA = 1'b0;
 		        end
 			end
             
@@ -80,12 +99,14 @@ module control (
 				Shift = 1'b0;
 		        Clr_Ld = 1'b0;
 		        Add = 1'b1;
+		        clearXA = 1'b0;
 		        end
 		      else begin
 				Sub = 1'b0;
 				Shift = 1'b0;
 		        Clr_Ld = 1'b0;
 		        Add = 1'b0;
+		        clearXA = 1'b0;
 		        end
             end
 
@@ -110,10 +131,11 @@ module control (
 			begin
 				if (Run) 
 				begin
-					next_state = a1;
+					next_state = clear_xa;
 				end
 			end
             reset:  next_state = s_start;
+            clear_xa: next_state = a1;
 			a1 :    next_state = s1;
 			s1 :    next_state = a2;
 			a2 :    next_state = s2;

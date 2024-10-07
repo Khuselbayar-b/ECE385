@@ -32,8 +32,6 @@ module control (
 
 	input logic 		continue_i,
 	input logic 		run_i,
-	
-    input logic         n,z,p,
     
 	output logic		ld_mar,
 	output logic		ld_mdr,
@@ -120,7 +118,7 @@ module control (
 	
 		// Assign relevant control signals based on current state
 		case (state)
-			halted: ; 
+			halted:  ; 
 			s_18 : 
 				begin 
 					gate_pc = 1'b1;

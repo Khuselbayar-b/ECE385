@@ -32,7 +32,7 @@ module toplevelmultiplier(
     logic [7:0] s_out, S_sync;
     logic [8:0] adder_out;
     logic a_shift_out, sdummy, bdummy, M, A7, S7;
-    logic reset_sync, run_sync, reset_control, run_ne;
+    logic reset_sync, run_sync, reset_control, run_ne, clearXA;
     
     negedge_detector run_once ( 
 		.clk	(Clk), 
@@ -68,7 +68,8 @@ module toplevelmultiplier(
         .Clr_Ld(reset_control), 
         .Shift(shift),
         .Add(add),
-        .Sub(subtract)
+        .Sub(subtract),
+        .clearXA(clearXA)
    );
    
 //     reg_4 registerS(
@@ -84,10 +85,11 @@ module toplevelmultiplier(
     
 
     
-   flipflopX X1(.Clk(Clk), .D_in(adder_out[8]), .Clr(reset_control), .Load(add || subtract), .D_out(Xval));
+   flipflopX X1(.Clk(Clk), .D_in(adder_out[8]), .Clr(reset_control || clearXA), .Load(add || subtract), .D_out(Xval));
     
     logic dummyCout;
     logic[7:0] S_data;
+    
     always_comb begin
     if (add == 1'b1 || subtract == 1'b1)
         S_data[7:0] = S_sync[7:0]; 
@@ -106,7 +108,7 @@ module toplevelmultiplier(
     
     reg_4 registerA(
     .Clk        (Clk),
-    .Reset      (reset_control),
+    .Reset      (reset_control || clearXA),
     .Shift_In   (Xval),
     .Load       (add || subtract),
     .Shift_En   (shift),
