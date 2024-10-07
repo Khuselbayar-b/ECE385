@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Sun Oct  6 17:20:15 2024
-| Host         : MSI running 64-bit major release  (build 9200)
+| Date         : Mon Oct  7 11:50:02 2024
+| Host         : ECEB-3022-16 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file processor_top_methodology_drc_routed.rpt -pb processor_top_methodology_drc_routed.pb -rpx processor_top_methodology_drc_routed.rpx
 | Design       : processor_top
 | Device       : xc7s50csga324-1
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 66
+             Violations found: 67
 +-----------+----------+--------------------------------+------------+
 | Rule      | Severity | Description                    | Violations |
 +-----------+----------+--------------------------------+------------+
 | TIMING-18 | Warning  | Missing input or output delay  | 59         |
-| TIMING-20 | Warning  | Non-clocked latch              | 6          |
+| TIMING-20 | Warning  | Non-clocked latch              | 7          |
 | LATCH-1   | Advisory | Existing latches in the design | 1          |
 +-----------+----------+--------------------------------+------------+
 
@@ -351,17 +351,22 @@ Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch slc3/cpu/cpu_control/mem_mem_ena_reg cannot be properly analyzed as its control pin slc3/cpu/cpu_control/mem_mem_ena_reg/G is not reached by a timing clock
+The latch slc3/cpu/cpu_control/ld_reg_reg cannot be properly analyzed as its control pin slc3/cpu/cpu_control/ld_reg_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
+Non-clocked latch  
+The latch slc3/cpu/cpu_control/mem_mem_ena_reg cannot be properly analyzed as its control pin slc3/cpu/cpu_control/mem_mem_ena_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
 Non-clocked latch  
 The latch slc3/cpu/cpu_control/sr1_reg cannot be properly analyzed as its control pin slc3/cpu/cpu_control/sr1_reg/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 6 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 7 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 

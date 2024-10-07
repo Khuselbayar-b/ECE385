@@ -29,18 +29,20 @@ module reg_file(
     output logic [15:0] sr2_out
     );
     
-    logic [15:0] reg_file [8];
+    logic [15:0] regfile [8];
+    
+       
+    always_comb 
+    begin
+           sr1_out = regfile[sr1];
+           sr2_out = regfile[sr2];
+    end
     
     always_ff @(posedge clk)
     begin
          if (ld_reg)
-               reg_file[dr] = databus;
+               regfile[dr] <= databus;
     end
-    
-    always_comb 
-    begin
-           sr1_out = reg_file[sr1];
-           sr2_out = reg_file[sr2];
-    end
+ 
     
 endmodule

@@ -4,15 +4,6 @@ Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'out' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:156]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'out' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:161]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'out' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:170]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'sr2mux_out' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:172]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'alu_select' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:174]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'alu2_out' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:175]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'alu' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:181]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'alu1' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:242]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'alu2' [C:/Users/realk/Desktop/ece385/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv:243]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

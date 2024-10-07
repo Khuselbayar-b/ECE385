@@ -50,7 +50,7 @@ module control (
 	output logic		mem_wr_ena,  // Mem Write Enable
 	
 	output logic        load_cc,
-	output logic        aluk,
+	output logic [1:0]  aluk,
 	output logic        sr2mux,
 	output logic  [1:0] addr2mux,
 	output logic        addr1mux,
@@ -118,9 +118,10 @@ module control (
 	
 		// Assign relevant control signals based on current state
 		case (state)
-			halted:  ; 
+			halted, s_32:  ; 
 			s_18 : 
 				begin 
+				    ld_reg = 1'b0;
 					gate_pc = 1'b1;
 					ld_mar = 1'b1;
 					pcmux = 2'b00;
@@ -163,21 +164,21 @@ module control (
 			 s5:
 			    begin
                     if (ir[5] == 1'b0) 
-                    begin
-                         aluk = 2'b10;
-                         sr2mux = 1'b0;
-                         sr1 = 1'b1;
-                         dtr = 1'b0;
-                         gate_alu = 1'b1;
-                    end
+                        begin
+                             aluk = 2'b10;
+                             sr2mux = 1'b1;
+                             sr1 = 1'b1;
+                             dtr = 1'b0;
+                             gate_alu = 1'b1;
+                        end
                     else
-                    begin
-                         aluk = 2'b10;
-                         sr2mux = 1'b1;
-                         sr1 = 1'b1;
-                         dtr = 1'b0;
-                         gate_alu = 1'b1;
-                    end 
+                        begin
+                             aluk = 2'b10;
+                             sr2mux = 1'b0;
+                             sr1 = 1'b1;
+                             dtr = 1'b0;
+                             gate_alu = 1'b1;
+                        end 
                     load_cc = 1'b1;
                     ld_reg = 1'b1;
 			    end
@@ -190,7 +191,7 @@ module control (
                      gate_alu = 1'b1;
                      ld_reg = 1'b1;
 			     end
-			s0:
+			s22:
 			    begin
 			         addr2mux = 2'b01;
 			         addr1mux = 1'b1;
@@ -213,16 +214,21 @@ module control (
 			         mem_mem_ena = 1'b0;
 			         ld_mdr = 1'b1;
 			     end
-			s16, s16_2, s16_3, s25, s25_2, s25_3:
+			s16, s16_2, s16_3:
 			     begin
 			         mem_wr_ena = 1'b1;
+			         mem_mem_ena = 1'b1;
 			     end
-			     
+			 s25, s25_2, s25_3:
+			       begin
+			         mem_mem_ena = 1'b1;
+			      end
 			s12:
 			    begin
 			         sr1 = 1'b1;
 			         gate_alu = 1'b1;
-			         pcmux = 2'b00;
+			         aluk = 2'b00;
+			         pcmux = 2'b10;
 			         ld_pc = 1'b1;
 			    end
 			s4:
@@ -240,7 +246,7 @@ module control (
 			     end
 			s6:
 			   begin
-			         addr2mux = 2'b01;
+			         addr2mux = 2'b10;
 			         addr1mux = 1'b0;
 			         sr1 = 1'b1;
 			         gate_marmux = 1'b1;
@@ -250,7 +256,7 @@ module control (
 			   begin
 			         gate_mdr = 1'b1;
 			         dtr = 1'b0;
-			         
+			         ld_reg = 1'b1;
 			   end
 			default : ;
 		endcase
