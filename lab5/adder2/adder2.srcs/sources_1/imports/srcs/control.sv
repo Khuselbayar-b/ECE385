@@ -114,7 +114,22 @@ module control (
 		gate_mdr = 1'b0;
 		 
 		pcmux = 2'b00;
-		
+	    mem_wr_ena = 1'b0;	
+	    mem_mem_ena = 1'b0;		    
+			         gate_alu = 1'b0;
+			         gate_pc = 1'b0;
+			         gate_marmux = 1'b0;
+			         gate_mdr = 1'b0;
+	//You should add additional control signals according to the SLC-3 datapath design
+
+        load_cc = 1'b0;
+        aluk = 2'b00;
+        sr2mux = 1'b0;
+        addr2mux = 2'b00;
+        addr1mux = 1'b0;
+        sr1 = 1'b0;
+        dtr = 1'b0;
+        ld_reg = 1'b0;
 	
 		// Assign relevant control signals based on current state
 		case (state)
@@ -126,6 +141,10 @@ module control (
 					ld_mar = 1'b1;
 					pcmux = 2'b00;
 					ld_pc = 1'b1;
+					
+					gate_alu = 1'b0;
+			        gate_marmux = 1'b0;
+			        gate_mdr = 1'b0;
 				end
 			s_33_1, s_33_2, s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
 				begin
@@ -136,6 +155,10 @@ module control (
 				begin 
 					gate_mdr = 1'b1;
 					ld_ir = 1'b1;
+					
+					gate_alu = 1'b0;
+			        gate_pc = 1'b0;
+			        gate_marmux = 1'b0;
 				end
 			pause_ir1: ld_led = 1'b1; 
 			pause_ir2: ld_led = 1'b1; 
@@ -160,6 +183,10 @@ module control (
                     end
                     load_cc = 1'b1;
                     ld_reg = 1'b1;
+              
+			         gate_pc = 1'b0;
+			         gate_marmux = 1'b0;
+			         gate_mdr = 1'b0;
 			    end
 			 s5:
 			    begin
@@ -181,6 +208,10 @@ module control (
                         end 
                     load_cc = 1'b1;
                     ld_reg = 1'b1;
+                    
+			         gate_pc = 1'b0;
+			         gate_marmux = 1'b0;
+			         gate_mdr = 1'b0;
 			    end
 			s9:
 			     begin
@@ -190,6 +221,10 @@ module control (
                      dtr = 1'b0;
                      gate_alu = 1'b1;
                      ld_reg = 1'b1;
+                  
+			         gate_pc = 1'b0;
+			         gate_marmux = 1'b0;
+			         gate_mdr = 1'b0;
 			     end
 			s22:
 			    begin
@@ -197,6 +232,7 @@ module control (
 			         addr1mux = 1'b1;
 			         ld_pc = 1'b1;
 			         pcmux = 2'b01;
+			         
 			    end
 			s7:
 			    begin 
@@ -205,14 +241,22 @@ module control (
 			         sr1 = 1'b1;
 			         gate_marmux = 1'b1;
 			         ld_mar = 1'b1;
+			         
+			         gate_alu = 1'b0;
+			         gate_pc = 1'b0;
+			         gate_mdr = 1'b0;
 			    end
 			s23:
 			     begin
 			         sr1 = 1'b0;
 			         aluk = 2'b00;
-			         gate_alu = 1'b0;
+			         gate_alu = 1'b1;
 			         mem_mem_ena = 1'b0;
 			         ld_mdr = 1'b1;
+			         
+			         gate_marmux = 1'b0;
+			         gate_pc = 1'b0;
+			         gate_mdr = 1'b0;
 			     end
 			s16, s16_2, s16_3:
 			     begin
@@ -222,20 +266,29 @@ module control (
 			 s25, s25_2, s25_3:
 			       begin
 			         mem_mem_ena = 1'b1;
+			         ld_mdr = 1'b1;
 			      end
 			s12:
 			    begin
 			         sr1 = 1'b1;
-			         gate_alu = 1'b1;
+			         gate_alu = 1'b1; 
 			         aluk = 2'b00;
 			         pcmux = 2'b10;
 			         ld_pc = 1'b1;
+			         
+			         gate_pc = 1'b0;
+			         gate_marmux = 1'b0;
+			         gate_mdr = 1'b0;
 			    end
 			s4:
 			    begin
 			         gate_pc = 1'b1;
 			         ld_reg = 1'b1;
-			         dtr = 1'b1;     
+			         dtr = 1'b1; 
+			         
+			         gate_alu = 1'b0;
+			         gate_marmux = 1'b0;
+			         gate_mdr = 1'b0;    
 			    end
 			 s21:
 			     begin 
@@ -251,12 +304,20 @@ module control (
 			         sr1 = 1'b1;
 			         gate_marmux = 1'b1;
 			         ld_mar = 1'b1;
+			         
+			         gate_alu = 1'b0;
+			         gate_pc = 1'b0;
+			         gate_mdr = 1'b0;
 			   end
 			s27:
 			   begin
 			         gate_mdr = 1'b1;
 			         dtr = 1'b0;
 			         ld_reg = 1'b1;
+			         
+			         gate_alu = 1'b0;
+			         gate_pc = 1'b0;
+			         gate_marmux = 1'b0;
 			   end
 			default : ;
 		endcase

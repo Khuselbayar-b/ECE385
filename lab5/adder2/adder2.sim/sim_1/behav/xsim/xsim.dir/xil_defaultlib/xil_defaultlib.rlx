@@ -3,8 +3,8 @@
 Oct 14 2022
 05:20:55
 C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.sim/sim_1/behav/xsim/glbl.v,1728312022,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sim_1/new/testbenchpart1.sv,1728312022,systemVerilog,,,,testbenchpart1,,uvm,,,,,,
-C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/control.sv,1728319490,systemVerilog,,C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv,,control,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sim_1/new/testbenchpart1.sv,1728337875,systemVerilog,,,,testbenchpart1,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/control.sv,1728335883,systemVerilog,,C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv,,control,,uvm,,,,,,
 C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu.sv,1728317931,systemVerilog,,C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu_to_io.sv,,cpu,,uvm,,,,,,
 C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/cpu_to_io.sv,1728312022,systemVerilog,,C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/new/databusmux.sv,,cpu_to_io,,uvm,,,,,,
 C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/hex_driver.sv,1728312022,systemVerilog,,C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sources_1/imports/srcs/instantiate_ram.sv,,hex_driver,,uvm,,,,,,

@@ -13,15 +13,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,244.306 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,389.307 ns"></ZoomEndTime>
-      <Cursor1Time time="1,208.342 ns"></Cursor1Time>
+      <ZoomStartTime time="2,423.749 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,790.250 ns"></ZoomEndTime>
+      <Cursor1Time time="1,929.166 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="143"></NameColumnWidth>
-      <ValueColumnWidth column_width="64"></ValueColumnWidth>
+      <NameColumnWidth column_width="141"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
+   <WVObjectSize size="21" />
    <wvobject fp_name="/testbenchpart1/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -41,6 +41,10 @@
    <wvobject fp_name="/testbenchpart1/sw_i" type="array">
       <obj_property name="ElementShortName">sw_i[15:0]</obj_property>
       <obj_property name="ObjectShortName">sw_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/io_bridge/hex_display" type="array">
+      <obj_property name="ElementShortName">hex_display[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_display[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbenchpart1/led_o" type="array">
       <obj_property name="ElementShortName">led_o[15:0]</obj_property>
@@ -91,6 +95,10 @@
       <obj_property name="ElementShortName">[1][15:0]</obj_property>
       <obj_property name="ObjectShortName">[1][15:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[7]" type="array">
+      <obj_property name="ElementShortName">[7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][15:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/PCMUX/pcmux_select" type="array">
       <obj_property name="ElementShortName">pcmux_select[1:0]</obj_property>
       <obj_property name="ObjectShortName">pcmux_select[1:0]</obj_property>
@@ -98,9 +106,5 @@
    <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/PCMUX/databus" type="array">
       <obj_property name="ElementShortName">databus[15:0]</obj_property>
       <obj_property name="ObjectShortName">databus[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/PCMUX/muxoutput" type="array">
-      <obj_property name="ElementShortName">muxoutput[15:0]</obj_property>
-      <obj_property name="ObjectShortName">muxoutput[15:0]</obj_property>
    </wvobject>
 </wave_config>

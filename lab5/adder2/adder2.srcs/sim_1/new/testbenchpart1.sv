@@ -70,12 +70,24 @@ module testbenchpart1();
 	    #10
 	    reset <= 0;
 	    #10
-	    sw_i <= 16'h0003;
+	    sw_i <= 16'h000B;
 	    #10
 		run_i <= 1;
 		#10
 		run_i <= 0;
-		#50
+		#90
+	    continue_i <= 1;
+	    #10
+	    continue_i <= 0;
+	    #50
+	    continue_i <= 1;
+	    #10
+	    continue_i <= 0;
+	    #50
+		 continue_i <= 1;
+	    #10
+	    continue_i <= 0;
+	    #50
         $finish();
         end
    
