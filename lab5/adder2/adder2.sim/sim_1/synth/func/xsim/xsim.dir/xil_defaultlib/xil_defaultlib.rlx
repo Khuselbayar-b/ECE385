@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.sim/sim_1/synth/func/xsim/testbenchpart1_func_synth.v,1728402235,verilog,,,,ALU;ben;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_4_5;blk_mem_gen_0_blk_mem_gen_v8_4_5_synth;control;cpu;cpu_to_io;glbl;hex_driver;instantiate_ram;load_reg;load_reg_20;load_reg__parameterized0;load_reg__parameterized0_17;load_reg__parameterized0_18;load_reg__parameterized0_19;memory;muxPC;processor_top;reg_file;slc3;sync_debounce;sync_debounce_0;sync_debounce_1;sync_flop;sync_flop_10;sync_flop_11;sync_flop_12;sync_flop_13;sync_flop_14;sync_flop_15;sync_flop_16;sync_flop_2;sync_flop_3;sync_flop_4;sync_flop_5;sync_flop_6;sync_flop_7;sync_flop_8;sync_flop_9,,uvm,,,,,,
+C:/Users/kb40/Desktop/ECE385/lab5/adder2/adder2.srcs/sim_1/new/testbenchpart1.sv,1728401701,systemVerilog,,,,testbenchpart1,,uvm,,,,,,

@@ -37,9 +37,11 @@ input logic gate_pc, gate_mdr, gate_marmux, gate_alu,
     else if (gate_marmux == 1'b1)
     q_out = alu1;
     
-    else
+    else if (gate_alu == 1'b1)
     q_out = alu2;
-   
-   
+    
+    else
+    q_out = 16'h0000;
+    
     end
 endmodule

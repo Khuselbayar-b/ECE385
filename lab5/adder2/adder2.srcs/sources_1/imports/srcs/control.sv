@@ -168,7 +168,7 @@ module control (
                     if (ir[5] == 1'b0) 
                     begin
                          aluk = 2'b01;
-                         sr2mux = 1'b0;
+                         sr2mux = 1'b1;
                          sr1 = 1'b1;
                          dtr = 1'b0;
                          gate_alu = 1'b1;
@@ -176,7 +176,7 @@ module control (
                     else
                     begin
                          aluk = 2'b01;
-                         sr2mux = 1'b1;
+                         sr2mux = 1'b0;
                          sr1 = 1'b1;
                          dtr = 1'b0;
                          gate_alu = 1'b1;
@@ -314,6 +314,7 @@ module control (
 			         gate_mdr = 1'b1;
 			         dtr = 1'b0;
 			         ld_reg = 1'b1;
+			         load_cc = 1'b1;
 			         
 			         gate_alu = 1'b0;
 			         gate_pc = 1'b0;
