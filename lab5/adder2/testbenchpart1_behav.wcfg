@@ -6,22 +6,22 @@
       <db_ref path="testbenchpart1_behav.wdb" id="1">
          <top_modules>
             <top_module name="SLC3_TYPES" />
-            <top_module name="\$unit_control_sv_1803490765 " />
+            <top_module name="\$unit_ALU_sv_1855752848 " />
             <top_module name="glbl" />
             <top_module name="testbenchpart1" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="999,993 ps"></ZoomStartTime>
-      <ZoomEndTime time="1,000,002 ps"></ZoomEndTime>
-      <Cursor1Time time="1,000,000 ps"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="832.001 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="143"></NameColumnWidth>
-      <ValueColumnWidth column_width="68"></ValueColumnWidth>
+      <NameColumnWidth column_width="135"></NameColumnWidth>
+      <ValueColumnWidth column_width="64"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="37" />
    <wvobject fp_name="/testbenchpart1/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -37,6 +37,14 @@
    <wvobject fp_name="/testbenchpart1/continue_i" type="logic">
       <obj_property name="ElementShortName">continue_i</obj_property>
       <obj_property name="ObjectShortName">continue_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/hex_display_debug" type="array">
+      <obj_property name="ElementShortName">hex_display_debug[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_display_debug[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/io_bridge/hex_display" type="array">
+      <obj_property name="ElementShortName">hex_display[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hex_display[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbenchpart1/sw_i" type="array">
       <obj_property name="ElementShortName">sw_i[15:0]</obj_property>
@@ -73,9 +81,97 @@
    <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/ir" type="array">
       <obj_property name="ElementShortName">ir[15:0]</obj_property>
       <obj_property name="ObjectShortName">ir[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/pc" type="array">
       <obj_property name="ElementShortName">pc[15:0]</obj_property>
       <obj_property name="ObjectShortName">pc[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/cpu_control/state" type="array">
+      <obj_property name="ElementShortName">state[5:0]</obj_property>
+      <obj_property name="ObjectShortName">state[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/cpu_control/ben" type="logic">
+      <obj_property name="ElementShortName">ben</obj_property>
+      <obj_property name="ObjectShortName">ben</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[0]" type="array">
+      <obj_property name="ElementShortName">[0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[1]" type="array">
+      <obj_property name="ElementShortName">[1][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[2]" type="array">
+      <obj_property name="ElementShortName">[2][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[3]" type="array">
+      <obj_property name="ElementShortName">[3][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[4]" type="array">
+      <obj_property name="ElementShortName">[4][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[4][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[5]" type="array">
+      <obj_property name="ElementShortName">[5][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[6]" type="array">
+      <obj_property name="ElementShortName">[6][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/registerFile/regfile[7]" type="array">
+      <obj_property name="ElementShortName">[7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/PCMUX/databus" type="array">
+      <obj_property name="ElementShortName">databus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">databus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/alu2/alu2_out" type="array">
+      <obj_property name="ElementShortName">alu2_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu2_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/cpu_control/load_cc" type="logic">
+      <obj_property name="ElementShortName">load_cc</obj_property>
+      <obj_property name="ObjectShortName">load_cc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/nzp_logic/n_out" type="logic">
+      <obj_property name="ElementShortName">n_out</obj_property>
+      <obj_property name="ObjectShortName">n_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/nzp_logic/z_out" type="logic">
+      <obj_property name="ElementShortName">z_out</obj_property>
+      <obj_property name="ObjectShortName">z_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/nzp_logic/p_out" type="logic">
+      <obj_property name="ElementShortName">p_out</obj_property>
+      <obj_property name="ObjectShortName">p_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/nzp_logic/n" type="logic">
+      <obj_property name="ElementShortName">n</obj_property>
+      <obj_property name="ObjectShortName">n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/nzp_logic/z" type="logic">
+      <obj_property name="ElementShortName">z</obj_property>
+      <obj_property name="ObjectShortName">z</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/nzp_logic/p" type="logic">
+      <obj_property name="ElementShortName">p</obj_property>
+      <obj_property name="ObjectShortName">p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/nzp_logic/databus" type="array">
+      <obj_property name="ElementShortName">databus[15:0]</obj_property>
+      <obj_property name="ObjectShortName">databus[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbenchpart1/processor0/slc3/cpu/nzp_logic/ld_cc" type="logic">
+      <obj_property name="ElementShortName">ld_cc</obj_property>
+      <obj_property name="ObjectShortName">ld_cc</obj_property>
    </wvobject>
 </wave_config>

@@ -29,23 +29,23 @@ module ben(
     logic n, z, p;
     always_comb 
         begin
-            if (databus < 0) 
+            if (databus == 16'h0000)
+                begin
+                    z = 1;
+                    n = 0;
+                    p = 0;
+                end
+           else if (databus[15] == 1'b1) 
                 begin
                 n = 1;
                 p = 0;
                 z = 0;
                 end
-            else if (databus > 0)
+            else
                 begin
                 p = 1;
                 n = 0;
                 z = 0;
-                end
-            else
-                begin
-                z = 1;
-                n = 0;
-                p = 0;
                 end
         end
      
@@ -77,5 +77,22 @@ module ben(
         .data_i(p),
     
         .data_q(p_out)
-    );
+     );
+     
+//     always_ff @(posedge clk)
+//    begin
+//         if (ld_cc)
+//         begin
+//            n_out <= n;
+//            z_out <= z;
+//            p_out <= p;
+//         end
+//         else
+//         begin
+//            n_out <= n_out;
+//            z_out <= z_out;
+//            p_out <= p_out;
+//         end
+//    end
+
 endmodule

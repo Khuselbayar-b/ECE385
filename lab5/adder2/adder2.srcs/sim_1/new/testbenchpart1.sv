@@ -66,16 +66,243 @@ module testbenchpart1();
  
 	// happens first. 
 	initial begin: TEST_VECTORS
-	    reset <= 1;
+//	    reset <= 1;  # multiply
+//	    #10
+//	    reset <= 0;
+//	    #10
+//	    sw_i <= 16'h0031;
+//	    #20
+//		run_i <= 1;
+//		#10
+//		run_i <= 0;
+//		#100
+//		sw_i <= 16'h0002;
+//		#100
+//		continue_i <= 1;
+//		#10
+//		continue_i <= 0;
+//		#500
+//		sw_i <= 16'h0003;
+//		#100
+//		continue_i <= 1;
+//		#10
+//		continue_i <= 0;
+//		#1000
+		
+		
+//		reset <= 1;  # auto count
+//	    #10
+//	    reset <= 0;
+//	    #10
+//	    sw_i <= 16'h009C;
+//	    #20
+//		run_i <= 1;
+//		#10
+//		run_i <= 0;
+//		#10000
+
+		reset <= 1;
 	    #10
 	    reset <= 0;
 	    #10
-	    sw_i <= 16'h0003;
-	    #10
+	    sw_i <= 16'h005A;
+	    #20
 		run_i <= 1;
 		#10
 		run_i <= 0;
+		#1000
+		sw_i <= 16'h0001;
+		#500
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#1000
+		sw_i <= 16'h00fe;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
 		#50
+		sw_i <= 16'h001b;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h0001;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h008c;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h00db;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h00fa;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h0047;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h0046;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h001f;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h000d;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h00b8;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h0003;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h006b;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h004e;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h00f8;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h0007;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 16'h0002;
+		#1000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#50
+		sw_i <= 3'h0003;
+		#500
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+		#5000
+		continue_i <= 1;
+		#10
+		continue_i <= 0;
+	
+		#40000
+    
         $finish();
         end
    

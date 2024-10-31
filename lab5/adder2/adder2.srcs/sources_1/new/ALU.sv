@@ -32,8 +32,8 @@ module ALU(
         else if (alu_select == 2'b01)
             alu2_out = sr2mux_out + sr1_out;
         else if (alu_select == 2'b10)
-            alu2_out = sr2mux_out && sr1_out;
-        else
-            alu2_out = sr1_out ^ 16'h1111;
+            alu2_out = sr2mux_out & sr1_out;
+        else 
+            alu2_out = ~sr1_out;
     end
 endmodule

@@ -78,8 +78,8 @@ ben nzp_logic (
 
 assign ben = ir[11] && n || ir[10] && z || ir[9] && p;
 
-logic aluk, sr2mux, addr1mux, sr1_select, dtr_select, ld_reg, gate_marmux, gate_alu;
-logic [1:0] addr2mux;
+logic sr2mux, addr1mux, sr1_select, dtr_select, ld_reg, gate_marmux, gate_alu;
+logic [1:0] addr2mux, aluk;
 
 control cpu_control (
     .clk(clk), 
@@ -144,7 +144,7 @@ two_one_mux #(.WIDTH(3)) sr1_mux (
 
 reg_file registerFile(.databus(databus), .dr(dr), .sr1(sr1), .sr2(ir[2:0]), .ld_reg(ld_reg), .clk(clk), .sr1_out(sr1_out), .sr2_out(sr2_out));
 
-logic addr2out, addr1out;
+logic [15:0] addr2out, addr1out;
 
 four_one_mux ADDR2MUX(.sext10({{5{ir[10]}}, ir[10:0]}), 
                         .sext8({{7{ir[8]}}, ir[8:0]}), 
@@ -158,7 +158,7 @@ two_one_mux #(.WIDTH(16)) ADDR1MUX(.in0(sr1_out),
                                    .sel(addr1mux),
                                    .out(addr1out));
 
-logic alu2_out, sr2mux_out;
+logic [15:0] alu2_out, sr2mux_out, alu1_out;
 
 assign alu1_out = addr1out + addr2out;
 
@@ -169,7 +169,7 @@ two_one_mux #(.WIDTH(16)) SR2MUX (.in0({{11{ir[4]}}, ir[4:0]}),
 
 ALU alu2 (.sr2mux_out(sr2mux_out),
           .sr1_out(sr1_out),
-          .alu_select(alu),
+          .alu_select(aluk),
           .alu2_out(alu2_out));
 
 
