@@ -34,11 +34,11 @@ module hdmi_text_controller_v1_0_AXI #
     // Width of S_AXI data bus
     parameter integer C_S_AXI_DATA_WIDTH	= 32,
     // Width of S_AXI address bus
-    parameter integer C_S_AXI_ADDR_WIDTH	= 4
+    parameter integer C_S_AXI_ADDR_WIDTH	= 10
 )
 (
     // Users to add ports here
-
+    
     // User ports ends
 
     // Global Clock Signal
@@ -134,7 +134,7 @@ localparam integer OPT_MEM_ADDR_BITS = 1;
 //Note: the provided Verilog template had the registered declared as above, but in order to give 
 //students a hint we have replaced the 4 individual registers with an unpacked array of packed logic. 
 //Note that you as the student will still need to extend this to the full register set needed for the lab.
-logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[4];
+logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[600];
 logic	 slv_reg_rden;
 logic	 slv_reg_wren;
 logic [C_S_AXI_DATA_WIDTH-1:0]	 reg_data_out;
@@ -247,7 +247,8 @@ always_ff @( posedge S_AXI_ACLK )
 begin
   if ( S_AXI_ARESETN == 1'b0 )
     begin
-        for (integer i = 0; i < 2**C_S_AXI_ADDR_WIDTH; i++)
+        //for (integer i = 0; i < 2**C_S_AXI_ADDR_WIDTH; i++)
+        for (integer i = 0; i < 601; i++)
         begin
            slv_regs[i] <= 0;
         end
@@ -259,7 +260,8 @@ begin
           if ( S_AXI_WSTRB[byte_index] == 1 ) begin
             // Respective byte enables are asserted as per write strobes, note the use of the index part select operator
             // '+:', you will need to understand how this operator works.
-            slv_regs[axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB]][(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
+            //CHANGE HEEERE
+            slv_regs[axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS +: 10]][(byte_index*8) +: 8] <= S_AXI_WDATA[(byte_index*8) +: 8];
           end  
       end
   end
@@ -366,6 +368,7 @@ assign slv_reg_rden = axi_arready & S_AXI_ARVALID & ~axi_rvalid;
 always_comb
 begin
       // Address decoding for reading registers
+      //CHANGE HHEEERE
      reg_data_out = slv_regs[axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB]];
 end
 

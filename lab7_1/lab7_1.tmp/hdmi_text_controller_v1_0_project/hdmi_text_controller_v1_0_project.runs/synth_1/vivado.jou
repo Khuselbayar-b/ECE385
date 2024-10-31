@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct 31 11:55:07 2024
+# Process ID: 20432
+# Current directory: c:/Users/kb40/Desktop/ECE385/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/synth_1
+# Command line: vivado.exe -log hdmi_text_controller_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_text_controller_tb.tcl
+# Log file: c:/Users/kb40/Desktop/ECE385/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/synth_1/hdmi_text_controller_tb.vds
+# Journal file: c:/Users/kb40/Desktop/ECE385/lab7_1/lab7_1.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/synth_1\vivado.jou
+# Running On: ECEB-3022-16, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 6, Host memory: 33554 MB
+#-----------------------------------------------------------
+source hdmi_text_controller_tb.tcl -notrace

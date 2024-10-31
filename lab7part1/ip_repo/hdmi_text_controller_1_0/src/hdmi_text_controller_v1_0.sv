@@ -13,7 +13,7 @@ module hdmi_text_controller_v1_0 #
     // Modify parameters as necessary for access of full VRAM range
 
     parameter integer C_AXI_DATA_WIDTH	= 32,
-    parameter integer C_AXI_ADDR_WIDTH	= 4 
+    parameter integer C_AXI_ADDR_WIDTH	= 10
 )
 (
     // Users to add ports here
@@ -81,7 +81,12 @@ hdmi_text_controller_v1_0_AXI # (
     .S_AXI_RREADY(axi_rready)
 );
 
-
+logic clk_25MHz, clk_125MHz, clk;
+logic locked;
+logic [9:0] drawX, drawY;
+logic vsync, hsync, vde;
+logic [3:0] red, green, blue;
+logic reset_ah;
 //Instiante clocking wizard, VGA sync generator modules, and VGA-HDMI IP here. For a hint, refer to the provided
 //top-level from the previous lab. You should get the IP to generate a valid HDMI signal (e.g. blue screen or gradient)
 //prior to working on the text drawing.
@@ -114,9 +119,9 @@ hdmi_text_controller_v1_0_AXI # (
         //Reset is active LOW
         .rst(reset_ah),
         //Color and Sync Signals
-        .red(red),
-        .green(green),
-        .blue(blue),
+        .red(4'b1111),
+        .green(4'b0),
+        .blue(4'b0),
         .hsync(hsync),
         .vsync(vsync),
         .vde(vde),
@@ -128,10 +133,10 @@ hdmi_text_controller_v1_0_AXI # (
         .ade(1'b0),
         
         //Differential outputs
-        .TMDS_CLK_P(hdmi_tmds_clk_p),          
-        .TMDS_CLK_N(hdmi_tmds_clk_n),          
-        .TMDS_DATA_P(hdmi_tmds_data_p),         
-        .TMDS_DATA_N(hdmi_tmds_data_n)          
+        .TMDS_CLK_P(hdmi_clk_p),          
+        .TMDS_CLK_N(hdmi_clk_n),          
+        .TMDS_DATA_P(hdmi_tx_p),         
+        .TMDS_DATA_N(hdmi_tx_n)          
     );
 // User logic ends
 
