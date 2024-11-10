@@ -1,0 +1,677 @@
+03:24:33 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/IDE.log'.
+03:24:35 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\ece385\ECE385\lab7_2\lab7_2_sdk\temp_xsdb_launch_script.tcl
+03:24:35 INFO  : Registering command handlers for Vitis TCF services
+03:24:36 INFO  : Platform repository initialization has completed.
+03:24:37 INFO  : XSCT server has started successfully.
+03:24:37 INFO  : Successfully done setting XSCT server connection channel  
+03:24:39 INFO  : plnx-install-location is set to ''
+03:24:39 INFO  : Successfully done setting workspace for the tool. 
+03:24:39 INFO  : Successfully done query RDI_DATADIR 
+03:25:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1562] Source directory C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/hw/drivers\hdmi_text_controller_v1_0/src does not exist or is not a directory.
+
+03:25:34 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:25:34 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+03:25:34 WARN  : An unexpected exception occurred in the module 'platform project logging'
+03:25:35 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+03:25:38 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+03:30:28 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+03:30:28 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+03:30:29 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+03:31:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:31:38 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:31:38 INFO  : 'jtag frequency' command is executed.
+03:31:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:31:40 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:31:40 INFO  : Context for processor 'microblaze_0' is selected.
+03:31:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:31:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:31:40 INFO  : Context for processor 'microblaze_0' is selected.
+03:31:40 INFO  : System reset is completed.
+03:31:43 INFO  : 'after 3000' command is executed.
+03:31:43 INFO  : Context for processor 'microblaze_0' is selected.
+03:31:43 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+03:31:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+03:31:43 INFO  : Context for processor 'microblaze_0' is selected.
+03:31:43 INFO  : 'con' command is executed.
+03:31:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:31:43 INFO  : Disconnected from the channel tcfchan#2.
+03:35:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:35:43 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:35:43 INFO  : 'jtag frequency' command is executed.
+03:35:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:35:44 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:35:44 INFO  : Context for processor 'microblaze_0' is selected.
+03:35:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:35:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:35:44 INFO  : Context for processor 'microblaze_0' is selected.
+03:35:44 INFO  : System reset is completed.
+03:35:47 INFO  : 'after 3000' command is executed.
+03:35:47 INFO  : Context for processor 'microblaze_0' is selected.
+03:35:48 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+03:35:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+03:35:48 INFO  : Context for processor 'microblaze_0' is selected.
+03:35:48 INFO  : 'con' command is executed.
+03:35:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:35:48 INFO  : Disconnected from the channel tcfchan#3.
+03:36:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:36:16 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:36:16 INFO  : 'jtag frequency' command is executed.
+03:36:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:36:18 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:36:18 INFO  : Context for processor 'microblaze_0' is selected.
+03:36:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:36:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:36:18 INFO  : Context for processor 'microblaze_0' is selected.
+03:36:18 INFO  : System reset is completed.
+03:36:21 INFO  : 'after 3000' command is executed.
+03:36:21 INFO  : Context for processor 'microblaze_0' is selected.
+03:36:21 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+03:36:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+03:36:21 INFO  : Context for processor 'microblaze_0' is selected.
+03:36:21 INFO  : 'con' command is executed.
+03:36:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:36:21 INFO  : Disconnected from the channel tcfchan#4.
+03:37:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:37:54 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:37:54 INFO  : 'jtag frequency' command is executed.
+03:37:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:37:55 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:37:55 INFO  : Context for processor 'microblaze_0' is selected.
+03:37:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:37:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:37:55 INFO  : Context for processor 'microblaze_0' is selected.
+03:37:55 INFO  : System reset is completed.
+03:37:58 INFO  : 'after 3000' command is executed.
+03:37:58 INFO  : Context for processor 'microblaze_0' is selected.
+03:37:59 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+03:37:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+03:37:59 INFO  : Context for processor 'microblaze_0' is selected.
+03:37:59 INFO  : 'con' command is executed.
+03:37:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:37:59 INFO  : Disconnected from the channel tcfchan#5.
+03:38:18 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+03:38:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:38:24 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:38:24 INFO  : 'jtag frequency' command is executed.
+03:38:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:38:25 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:38:25 INFO  : Context for processor 'microblaze_0' is selected.
+03:38:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:38:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:38:25 INFO  : Context for processor 'microblaze_0' is selected.
+03:38:25 INFO  : System reset is completed.
+03:38:28 INFO  : 'after 3000' command is executed.
+03:38:28 INFO  : Context for processor 'microblaze_0' is selected.
+03:38:29 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+03:38:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+03:38:29 INFO  : Context for processor 'microblaze_0' is selected.
+03:38:29 INFO  : 'con' command is executed.
+03:38:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:38:29 INFO  : Disconnected from the channel tcfchan#6.
+03:39:17 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+03:39:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:39:27 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:39:27 INFO  : 'jtag frequency' command is executed.
+03:39:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:39:29 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:39:29 INFO  : Context for processor 'microblaze_0' is selected.
+03:39:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:39:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:39:29 INFO  : Context for processor 'microblaze_0' is selected.
+03:39:29 INFO  : System reset is completed.
+03:39:32 INFO  : 'after 3000' command is executed.
+03:39:32 INFO  : Context for processor 'microblaze_0' is selected.
+03:39:32 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+03:39:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+03:39:32 INFO  : Context for processor 'microblaze_0' is selected.
+03:39:32 INFO  : 'con' command is executed.
+03:39:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:39:32 INFO  : Disconnected from the channel tcfchan#7.
+05:19:37 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+05:19:53 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+05:19:53 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+05:19:54 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+05:20:54 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+05:22:31 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+05:26:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:26:22 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+05:26:22 INFO  : 'jtag frequency' command is executed.
+05:26:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:26:24 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+05:26:24 INFO  : Context for processor 'microblaze_0' is selected.
+05:26:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+05:26:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:26:24 INFO  : Context for processor 'microblaze_0' is selected.
+05:26:24 INFO  : System reset is completed.
+05:26:27 INFO  : 'after 3000' command is executed.
+05:26:27 INFO  : Context for processor 'microblaze_0' is selected.
+05:26:27 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+05:26:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+05:26:27 INFO  : Context for processor 'microblaze_0' is selected.
+05:26:27 INFO  : 'con' command is executed.
+05:26:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:26:27 INFO  : Disconnected from the channel tcfchan#9.
+05:28:08 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+05:28:32 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+05:28:32 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+05:28:34 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+05:28:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:28:46 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+05:28:46 INFO  : 'jtag frequency' command is executed.
+05:28:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:28:48 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+05:28:48 INFO  : Context for processor 'microblaze_0' is selected.
+05:28:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+05:28:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:28:48 INFO  : Context for processor 'microblaze_0' is selected.
+05:28:48 INFO  : System reset is completed.
+05:28:51 INFO  : 'after 3000' command is executed.
+05:28:51 INFO  : Context for processor 'microblaze_0' is selected.
+05:28:51 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+05:28:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+05:28:52 INFO  : Context for processor 'microblaze_0' is selected.
+05:28:52 INFO  : 'con' command is executed.
+05:28:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:28:52 INFO  : Disconnected from the channel tcfchan#11.
+05:29:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:29:34 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+05:29:34 INFO  : 'jtag frequency' command is executed.
+05:29:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+05:29:35 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+05:29:36 INFO  : Context for processor 'microblaze_0' is selected.
+05:29:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+05:29:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:29:36 INFO  : Context for processor 'microblaze_0' is selected.
+05:29:36 INFO  : System reset is completed.
+05:29:39 INFO  : 'after 3000' command is executed.
+05:29:39 INFO  : Context for processor 'microblaze_0' is selected.
+05:29:39 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+05:29:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+05:29:39 INFO  : Context for processor 'microblaze_0' is selected.
+05:29:39 INFO  : 'con' command is executed.
+05:29:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:29:39 INFO  : Disconnected from the channel tcfchan#12.
+19:41:06 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+19:48:29 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+19:48:29 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+19:48:31 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+19:48:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:48:43 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:48:43 INFO  : 'jtag frequency' command is executed.
+19:48:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:48:44 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:48:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:48:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:48:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:48:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:48:44 INFO  : System reset is completed.
+19:48:47 INFO  : 'after 3000' command is executed.
+19:48:47 INFO  : Context for processor 'microblaze_0' is selected.
+19:48:48 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+19:48:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+19:48:48 INFO  : Context for processor 'microblaze_0' is selected.
+19:48:48 INFO  : 'con' command is executed.
+19:48:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:48:48 INFO  : Disconnected from the channel tcfchan#14.
+19:49:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:49:15 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:49:15 INFO  : 'jtag frequency' command is executed.
+19:49:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:49:17 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:49:17 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:49:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:49:17 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:17 INFO  : System reset is completed.
+19:49:20 INFO  : 'after 3000' command is executed.
+19:49:20 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:20 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+19:49:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+19:49:20 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:20 INFO  : 'con' command is executed.
+19:49:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:49:20 INFO  : Disconnected from the channel tcfchan#15.
+19:49:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:49:54 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:49:54 INFO  : 'jtag frequency' command is executed.
+19:49:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:49:55 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:49:55 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:49:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:49:56 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:56 INFO  : System reset is completed.
+19:49:59 INFO  : 'after 3000' command is executed.
+19:49:59 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:59 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+19:49:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+19:49:59 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:59 INFO  : 'con' command is executed.
+19:49:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:49:59 INFO  : Disconnected from the channel tcfchan#16.
+19:51:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:51:20 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:51:20 INFO  : 'jtag frequency' command is executed.
+19:51:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:51:22 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:51:22 INFO  : Context for processor 'microblaze_0' is selected.
+19:51:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:51:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:51:22 INFO  : Context for processor 'microblaze_0' is selected.
+19:51:22 INFO  : System reset is completed.
+19:51:25 INFO  : 'after 3000' command is executed.
+19:51:25 INFO  : Context for processor 'microblaze_0' is selected.
+19:51:25 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+19:51:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+19:51:25 INFO  : Context for processor 'microblaze_0' is selected.
+19:51:25 INFO  : 'con' command is executed.
+19:51:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:51:25 INFO  : Disconnected from the channel tcfchan#17.
+19:53:08 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+19:53:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:53:17 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:53:17 INFO  : 'jtag frequency' command is executed.
+19:53:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:53:18 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:53:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:53:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:53:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:18 INFO  : System reset is completed.
+19:53:21 INFO  : 'after 3000' command is executed.
+19:53:21 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:22 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+19:53:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+19:53:22 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:22 INFO  : 'con' command is executed.
+19:53:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:53:22 INFO  : Disconnected from the channel tcfchan#18.
+19:53:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:53:52 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:53:52 INFO  : 'jtag frequency' command is executed.
+19:53:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:53:53 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:53:53 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:53:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:53:53 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:53 INFO  : System reset is completed.
+19:53:56 INFO  : 'after 3000' command is executed.
+19:53:56 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:57 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+19:53:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+19:53:57 INFO  : Context for processor 'microblaze_0' is selected.
+19:53:57 INFO  : 'con' command is executed.
+19:53:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:53:57 INFO  : Disconnected from the channel tcfchan#19.
+20:00:53 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+20:01:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:01:02 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:01:02 INFO  : 'jtag frequency' command is executed.
+20:01:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:01:03 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:01:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:01:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:01:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:01:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:01:03 INFO  : System reset is completed.
+20:01:06 INFO  : 'after 3000' command is executed.
+20:01:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:01:07 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+20:01:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+20:01:07 INFO  : Context for processor 'microblaze_0' is selected.
+20:01:07 INFO  : 'con' command is executed.
+20:01:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:01:07 INFO  : Disconnected from the channel tcfchan#20.
+21:17:08 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+21:18:18 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+21:18:18 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+21:18:20 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+21:18:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:18:36 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+21:18:36 INFO  : 'jtag frequency' command is executed.
+21:18:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:18:37 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+21:18:37 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+21:18:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:18:37 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:37 INFO  : System reset is completed.
+21:18:40 INFO  : 'after 3000' command is executed.
+21:18:40 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:41 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+21:18:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+21:18:41 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:41 INFO  : 'con' command is executed.
+21:18:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:18:41 INFO  : Disconnected from the channel tcfchan#22.
+21:28:39 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+21:29:34 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+21:29:53 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+21:30:15 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+21:30:15 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+21:30:16 INFO  : Checking for BSP changes to sync application flags for project 'please_work'...
+21:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:33:57 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+21:33:57 INFO  : 'jtag frequency' command is executed.
+21:33:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:33:58 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit"
+21:33:58 INFO  : Context for processor 'microblaze_0' is selected.
+21:33:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+21:33:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:33:58 INFO  : Context for processor 'microblaze_0' is selected.
+21:33:58 INFO  : System reset is completed.
+21:34:01 INFO  : 'after 3000' command is executed.
+21:34:01 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:02 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf' is downloaded to processor 'microblaze_0'.
+21:34:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_2/lab7_2_sdk/please_work/Debug/please_work.elf
+----------------End of Script----------------
+
+21:34:02 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:02 INFO  : 'con' command is executed.
+21:34:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:34:02 INFO  : Disconnected from the channel tcfchan#24.

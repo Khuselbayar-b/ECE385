@@ -1,0 +1,2 @@
+ERROR: [XSIM 43-4307] Invalid entry in the project file, expecting a file name but specified path '../../../../hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0' represents a directory name.
+ERROR: [XSIM 43-3217] hdmi_text_controller_tb_vlog.prj (line 3): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
