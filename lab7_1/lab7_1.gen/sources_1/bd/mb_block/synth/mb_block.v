@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Thu Oct 31 09:55:46 2024
-//Host        : ECEB-3022-16 running 64-bit major release  (build 9200)
+//Date        : Thu Nov  7 01:11:38 2024
+//Host        : MSI running 64-bit major release  (build 9200)
 //Command     : generate_target mb_block.bd
 //Design      : mb_block
 //Purpose     : IP block netlist
@@ -419,12 +419,14 @@ module m02_couplers_imp_1ST4AV9
   assign m02_couplers_to_m02_couplers_WVALID = S_AXI_wvalid;
 endmodule
 
-(* CORE_GENERATION_INFO = "mb_block,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=mb_block,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=19,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "mb_block.hwdef" *) 
+(* CORE_GENERATION_INFO = "mb_block,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=mb_block,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=19,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_board_cnt=4,da_clkrst_cnt=1,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "mb_block.hwdef" *) 
 module mb_block
    (HDMI_0_tmds_clk_n,
     HDMI_0_tmds_clk_p,
     HDMI_0_tmds_data_n,
     HDMI_0_tmds_data_p,
+    axi_rready_0,
+    axi_wvalid_0,
     clk_100MHz,
     reset_rtl_0,
     uart_rtl_0_rxd,
@@ -433,6 +435,8 @@ module mb_block
   (* X_INTERFACE_INFO = "xilinx.com:interface:hdmi:2.0 HDMI_0 TMDS_CLK_P" *) output HDMI_0_tmds_clk_p;
   (* X_INTERFACE_INFO = "xilinx.com:interface:hdmi:2.0 HDMI_0 TMDS_DATA_N" *) output [2:0]HDMI_0_tmds_data_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:hdmi:2.0 HDMI_0 TMDS_DATA_P" *) output [2:0]HDMI_0_tmds_data_p;
+  input axi_rready_0;
+  input axi_wvalid_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN mb_block_clk_100MHz, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk_100MHz;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input reset_rtl_0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart_rtl_0 RxD" *) input uart_rtl_0_rxd;
@@ -440,6 +444,7 @@ module mb_block
 
   wire axi_uartlite_0_UART_RxD;
   wire axi_uartlite_0_UART_TxD;
+  wire axi_uartlite_0_interrupt;
   wire clk_100MHz_1;
   wire clk_wiz_1_locked;
   wire hdmi_text_controller_0_HDMI_TMDS_CLK_N;
@@ -565,7 +570,8 @@ module mb_block
   assign reset_rtl_0_1 = reset_rtl_0;
   assign uart_rtl_0_txd = axi_uartlite_0_UART_TxD;
   mb_block_axi_uartlite_0_0 axi_uartlite_0
-       (.rx(axi_uartlite_0_UART_RxD),
+       (.interrupt(axi_uartlite_0_interrupt),
+        .rx(axi_uartlite_0_UART_RxD),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(microblaze_0_axi_periph_M01_AXI_ARADDR[3:0]),
         .s_axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
@@ -591,14 +597,14 @@ module mb_block
         .clk_out1(microblaze_0_Clk),
         .locked(clk_wiz_1_locked),
         .reset(mdm_1_debug_sys_rst));
-  mb_block_hdmi_text_controller_0_0 hdmi_text_controller_0
+  mb_block_hdmi_text_controller_0_4 hdmi_text_controller_0
        (.axi_aclk(microblaze_0_Clk),
-        .axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[3:0]),
+        .axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[11:0]),
         .axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
         .axi_arprot(microblaze_0_axi_periph_M02_AXI_ARPROT),
         .axi_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
         .axi_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
-        .axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[3:0]),
+        .axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[11:0]),
         .axi_awprot(microblaze_0_axi_periph_M02_AXI_AWPROT),
         .axi_awready(microblaze_0_axi_periph_M02_AXI_AWREADY),
         .axi_awvalid(microblaze_0_axi_periph_M02_AXI_AWVALID),
@@ -685,7 +691,7 @@ module mb_block
         .Write_Strobe(microblaze_0_dlmb_1_WRITESTROBE));
   mb_block_microblaze_0_axi_intc_0 microblaze_0_axi_intc
        (.interrupt_address(microblaze_0_interrupt_ADDRESS),
-        .intr(1'b0),
+        .intr(axi_uartlite_0_interrupt),
         .irq(microblaze_0_interrupt_INTERRUPT),
         .processor_ack({microblaze_0_interrupt_ACK[0],microblaze_0_interrupt_ACK[1]}),
         .processor_clk(microblaze_0_Clk),

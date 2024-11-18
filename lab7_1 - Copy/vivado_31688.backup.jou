@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct 31 17:33:15 2024
+# Process ID: 31688
+# Current directory: C:/Users/realk/Desktop/ece385/ECE385/lab7_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27568 C:\Users\realk\Desktop\ece385\ECE385\lab7_1\lab7_1.xpr
+# Log file: C:/Users/realk/Desktop/ece385/ECE385/lab7_1/vivado.log
+# Journal file: C:/Users/realk/Desktop/ece385/ECE385/lab7_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16866 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/realk/Desktop/ece385/ECE385/lab7_1/lab7_1.xpr
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv}
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property  ip_repo_paths  {c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0 C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 [current_project]
+update_ip_catalog
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {125.247} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125.000} \
+  CONFIG.CLKOUT2_JITTER {125.247} \
+  CONFIG.CLKOUT2_PHASE_ERROR {98.575} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {125.000} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {8} \
+  CONFIG.NUM_OUT_CLKS {2} \
+] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+generate_target all [get_files  c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 16
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci] -directory c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::merge_project_changes files [ipx::current_core]
+set_property  ip_repo_paths  {c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 C:/Users/realk/Downloads/RD_hdmi_ip2020} [current_project]
+update_ip_catalog
+create_ip -name hdmi_tx -vendor realdigital.org -library realdigital -version 1.0 -module_name hdmi_tx_0 -dir c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src
+set_property -dict [list \
+  CONFIG.C_BLUE_WIDTH {4} \
+  CONFIG.C_GREEN_WIDTH {4} \
+  CONFIG.C_RED_WIDTH {4} \
+  CONFIG.MODE {HDMI} \
+] [get_ips hdmi_tx_0]
+generate_target {instantiation_template} [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+generate_target all [get_files  c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+catch { config_ip_cache -export [get_ips -all hdmi_tx_0] }
+export_ip_user_files -of_objects [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+launch_runs hdmi_tx_0_synth_1 -jobs 16
+wait_on_run hdmi_tx_0_synth_1
+export_simulation -of_objects [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci] -directory c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top hdmi_text_controller_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+ipx::merge_project_changes ports [ipx::current_core]
+close_project
+update_ip_catalog -delete_ip xilinx.com:user:hdmi_text_controller:1.0 -repo_path c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0

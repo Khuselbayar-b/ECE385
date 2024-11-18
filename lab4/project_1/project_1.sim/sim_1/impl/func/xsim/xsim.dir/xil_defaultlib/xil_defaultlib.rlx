@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.sim/sim_1/impl/func/xsim/testbench8_func_impl.v,1727468190,verilog,,,,control;flipflopX;glbl;hex_driver;negedge_detector;reg_4;reg_4_9;sync_debounce;sync_debounce_0;sync_debounce_1;sync_debounce_2;sync_debounce_3;sync_debounce_4;sync_debounce_5;sync_debounce_6;sync_debounce_7;sync_debounce_8;toplevelmultiplier,,uvm,,,,,,
+C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sim_1/new/testbench.sv,1727371805,systemVerilog,,,,testbench8,,uvm,,,,,,

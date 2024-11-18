@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Thu Oct 31 09:55:46 2024
-//Host        : ECEB-3022-16 running 64-bit major release  (build 9200)
+//Date        : Thu Nov  7 01:11:38 2024
+//Host        : MSI running 64-bit major release  (build 9200)
 //Command     : generate_target mb_block_wrapper.bd
 //Design      : mb_block_wrapper
 //Purpose     : IP block netlist
@@ -14,6 +14,8 @@ module mb_block_wrapper
     HDMI_0_tmds_clk_p,
     HDMI_0_tmds_data_n,
     HDMI_0_tmds_data_p,
+    axi_rready_0,
+    axi_wvalid_0,
     clk_100MHz,
     reset_rtl_0,
     uart_rtl_0_rxd,
@@ -22,6 +24,8 @@ module mb_block_wrapper
   output HDMI_0_tmds_clk_p;
   output [2:0]HDMI_0_tmds_data_n;
   output [2:0]HDMI_0_tmds_data_p;
+  input axi_rready_0;
+  input axi_wvalid_0;
   input clk_100MHz;
   input reset_rtl_0;
   input uart_rtl_0_rxd;
@@ -31,6 +35,8 @@ module mb_block_wrapper
   wire HDMI_0_tmds_clk_p;
   wire [2:0]HDMI_0_tmds_data_n;
   wire [2:0]HDMI_0_tmds_data_p;
+  wire axi_rready_0;
+  wire axi_wvalid_0;
   wire clk_100MHz;
   wire reset_rtl_0;
   wire uart_rtl_0_rxd;
@@ -41,6 +47,8 @@ module mb_block_wrapper
         .HDMI_0_tmds_clk_p(HDMI_0_tmds_clk_p),
         .HDMI_0_tmds_data_n(HDMI_0_tmds_data_n),
         .HDMI_0_tmds_data_p(HDMI_0_tmds_data_p),
+        .axi_rready_0(axi_rready_0),
+        .axi_wvalid_0(axi_wvalid_0),
         .clk_100MHz(clk_100MHz),
         .reset_rtl_0(reset_rtl_0),
         .uart_rtl_0_rxd(uart_rtl_0_rxd),

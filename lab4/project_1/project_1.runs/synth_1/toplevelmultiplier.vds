@@ -1,0 +1,298 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Oct  7 19:59:00 2024
+# Process ID: 28192
+# Current directory: C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log toplevelmultiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevelmultiplier.tcl
+# Log file: C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.runs/synth_1/toplevelmultiplier.vds
+# Journal file: C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16866 MB
+#-----------------------------------------------------------
+source toplevelmultiplier.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1002.512 ; gain = 118.543
+Command: read_checkpoint -auto_incremental -incremental C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/utils_1/imports/synth_1/toplevelmultiplier.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/utils_1/imports/synth_1/toplevelmultiplier.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top toplevelmultiplier -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4284
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'q' is not allowed [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/sync_debounce.sv:20]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1809.527 ; gain = 410.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'toplevelmultiplier' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/new/toplevelmultiplier.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'negedge_detector' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/negedge_detector.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'negedge_detector' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/negedge_detector.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'sync_debounce' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/sync_debounce.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'sync_debounce' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/sync_debounce.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/Control.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/Control.sv:41]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/Control.sv:128]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/Control.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'flipflopX' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/new/flipflopX.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'flipflopX' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/new/flipflopX.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ripple_adder' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/ripple_adder.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'ripple_adder_4' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/ripple_adder.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'fa' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/ripple_adder.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/ripple_adder.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ripple_adder_4' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/ripple_adder.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'ripple_adder' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/ripple_adder.sv:36]
+INFO: [Synth 8-6157] synthesizing module 'reg_4' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/Reg_4.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_4' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/Reg_4.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'toplevelmultiplier' (0#1) [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/new/toplevelmultiplier.sv:22]
+WARNING: [Synth 8-87] always_comb on 'clearXA_reg' did not result in combinational logic [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/Control.sv:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1900.250 ; gain = 500.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1900.250 ; gain = 500.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1900.250 ; gain = 500.977
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1900.250 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/constrs_1/imports/pin_assignment/top.xdc]
+Finished Parsing XDC File [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/constrs_1/imports/pin_assignment/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/constrs_1/imports/pin_assignment/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/toplevelmultiplier_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/toplevelmultiplier_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1988.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1988.961 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |              0000000000000000001 |                            00000
+                 s_start |              0000000000000000010 |                            00001
+                clear_xa |              0000000000000000100 |                            00010
+                      a1 |              0000000000000001000 |                            00011
+                      s1 |              0000000000000010000 |                            00100
+                      a2 |              0000000000000100000 |                            00101
+                      s2 |              0000000000001000000 |                            00110
+                      a3 |              0000000000010000000 |                            00111
+                      s3 |              0000000000100000000 |                            01000
+                      a4 |              0000000001000000000 |                            01001
+                      s4 |              0000000010000000000 |                            01010
+                      a5 |              0000000100000000000 |                            01011
+                      s5 |              0000001000000000000 |                            01100
+                      a6 |              0000010000000000000 |                            01101
+                      s6 |              0000100000000000000 |                            01110
+                      a7 |              0001000000000000000 |                            01111
+                      s7 |              0010000000000000000 |                            10000
+                      a8 |              0100000000000000000 |                            10001
+                      s8 |              1000000000000000000 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'control'
+WARNING: [Synth 8-327] inferring latch for variable 'clearXA_reg' [C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.srcs/sources_1/imports/design_source/Control.sv:48]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 10    
+	   3 Input      1 Bit         XORs := 9     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 33    
++---Muxes : 
+	  19 Input   19 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 4     
+	  19 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design toplevelmultiplier has port hex_seg[7] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    45|
+|3     |LUT1   |    21|
+|4     |LUT2   |    23|
+|5     |LUT3   |     8|
+|6     |LUT4   |    26|
+|7     |LUT5   |     6|
+|8     |LUT6   |    41|
+|9     |MUXF7  |     2|
+|10    |FDRE   |   244|
+|11    |FDSE   |     1|
+|12    |LD     |     1|
+|13    |IBUF   |    11|
+|14    |OBUF   |    29|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1988.961 ; gain = 589.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1988.961 ; gain = 500.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1988.961 ; gain = 589.688
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1988.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1988.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instance 
+
+Synth Design complete, checksum: c103e95f
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1988.961 ; gain = 961.555
+INFO: [Common 17-1381] The checkpoint 'C:/Users/realk/Desktop/ece385/ECE385/lab4/project_1/project_1.runs/synth_1/toplevelmultiplier.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file toplevelmultiplier_utilization_synth.rpt -pb toplevelmultiplier_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 19:59:42 2024...

@@ -1,0 +1,190 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct 31 17:33:15 2024
+# Process ID: 31688
+# Current directory: C:/Users/realk/Desktop/ece385/ECE385/lab7_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27568 C:\Users\realk\Desktop\ece385\ECE385\lab7_1\lab7_1.xpr
+# Log file: C:/Users/realk/Desktop/ece385/ECE385/lab7_1/vivado.log
+# Journal file: C:/Users/realk/Desktop/ece385/ECE385/lab7_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16866 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/realk/Desktop/ece385/ECE385/lab7_1/lab7_1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/lab7_1.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 1809.391 ; gain = 276.984
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv}
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv'.
+set_property  ip_repo_paths  {c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0 C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0'. The path is contained within another repository.
+set_property  ip_repo_paths  c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0'.
+set_property  ip_repo_paths  {c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0'. The path is contained within another repository.
+set_property  ip_repo_paths  c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0'.
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {125.247} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125.000} \
+  CONFIG.CLKOUT2_JITTER {125.247} \
+  CONFIG.CLKOUT2_PHASE_ERROR {98.575} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {125.000} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {8} \
+  CONFIG.NUM_OUT_CLKS {2} \
+] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_0
+export_ip_user_files -of_objects [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_0
+[Thu Oct 31 17:41:29 2024] Launched clk_wiz_0_synth_1...
+Run output will be captured here: c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.xci] -directory c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv'.
+WARNING: [IP_Flow 19-5898] Updating the required XPM macros from '' to 'XPM_CDC'
+set_property  ip_repo_paths  {c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0 C:/Users/realk/Downloads/RD_hdmi_ip2020} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/realk/Downloads/RD_hdmi_ip2020'.
+create_ip -name hdmi_tx -vendor realdigital.org -library realdigital -version 1.0 -module_name hdmi_tx_0 -dir c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src
+set_property -dict [list \
+  CONFIG.C_BLUE_WIDTH {4} \
+  CONFIG.C_GREEN_WIDTH {4} \
+  CONFIG.C_RED_WIDTH {4} \
+  CONFIG.MODE {HDMI} \
+] [get_ips hdmi_tx_0]
+generate_target {instantiation_template} [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_tx_0'...
+generate_target all [get_files  c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_tx_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_tx_0'...
+catch { config_ip_cache -export [get_ips -all hdmi_tx_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_tx_0
+export_ip_user_files -of_objects [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci]
+launch_runs hdmi_tx_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_tx_0
+[Thu Oct 31 17:43:21 2024] Launched hdmi_tx_0_synth_1...
+Run output will be captured here: c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/hdmi_tx_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdmi_tx_0.xci] -directory c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property top hdmi_text_controller_tb [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi_text_controller_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi_text_controller_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/realk/desktop/ece385/ece385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj hdmi_text_controller_tb_vlog.prj"
+ERROR: [XSIM 43-4307] Invalid entry in the project file, expecting a file name but specified path '../../../../../src/clk_wiz_0_1' represents a directory name.
+ERROR: [XSIM 43-3217] hdmi_text_controller_tb_vlog.prj (line 4): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ipx::merge_project_changes ports [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/component.xml' ignored by IP packager.
+INFO: [Ipptcl 7-560]  
+INFO: [Ipptcl 7-560]  
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'BMP_HEIGHT' by 525 for port or parameter 'bitmap'
+CRITICAL WARNING: [IP_Flow 19-4835] Multiple IP ports (axi_rready axi_rvalid axi_rresp axi_rdata axi_arready axi_arvalid axi_arprot axi_araddr axi_bready axi_bvalid axi_bresp axi_wready axi_wvalid axi_wstrb axi_wdata axi_awready axi_awvalid axi_awprot axi_awaddr) were removed from the interface 'AXI'. Please review the IP interface 'AXI'.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (axi_aresetn) was removed from the interface 'AXI_RST'. Please review the IP interface 'AXI_RST'.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (axi_aclk) was removed from the interface 'AXI_CLK'. Please review the IP interface 'AXI_CLK'.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (hdmi_clk_n) was removed from the interface 'hdmi_clk_n'. Please review the IP interface 'hdmi_clk_n'.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (hdmi_clk_p) was removed from the interface 'hdmi_clk_p'. Please review the IP interface 'hdmi_clk_p'.
+CRITICAL WARNING: [IP_Flow 19-4835] Multiple IP ports (hdmi_tx_p hdmi_tx_n hdmi_clk_p hdmi_clk_n) were removed from the interface 'HDMI'. Please review the IP interface 'HDMI'.
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv'.
+WARNING: [IP_Flow 19-965] There are no component ports to infer bus interfaces.
+close_project
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/component.xml. It will be created.
+update_ip_catalog -delete_ip xilinx.com:user:hdmi_text_controller:1.0 -repo_path c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/drivers/hdmi_text_controller_v1_0/data/hdmi_text_controller.mdd' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/drivers/hdmi_text_controller_v1_0/data/hdmi_text_controller.tcl' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller.h' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller.c' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/src/Makefile' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/xgui/hdmi_text_controller_v1_0.tcl' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/bd/bd.tcl' because it doesn't exist.
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0/component.xml' because it doesn't exist.
+INFO: [IP_Flow 19-1659] Deleted IP 'xilinx.com:user:hdmi_text_controller:1.0' from repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0' at c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0.
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/realk/Desktop/ece385/ECE385/ip_repo/hdmi_text_controller_1_0'
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 31 17:46:15 2024...

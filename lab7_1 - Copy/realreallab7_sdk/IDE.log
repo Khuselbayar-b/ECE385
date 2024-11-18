@@ -1,0 +1,159 @@
+17:10:14 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/IDE.log'.
+17:10:17 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\ece385\ECE385\lab7_1\realreallab7_sdk\temp_xsdb_launch_script.tcl
+17:10:17 INFO  : Registering command handlers for Vitis TCF services
+17:10:19 INFO  : Platform repository initialization has completed.
+17:10:21 INFO  : XSCT server has started successfully.
+17:10:25 INFO  : Successfully done setting XSCT server connection channel  
+17:10:25 INFO  : plnx-install-location is set to ''
+17:10:25 INFO  : Successfully done query RDI_DATADIR 
+17:10:25 INFO  : Successfully done setting workspace for the tool. 
+17:10:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1562] Source directory C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/hw/drivers\hdmi_text_controller_v1_0/src does not exist or is not a directory.
+
+17:10:59 INFO  : Result from executing command 'getProjects': mb_block_wrapper
+17:10:59 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+17:11:00 WARN  : An unexpected exception occurred in the module 'platform project logging'
+17:11:00 INFO  : Platform 'mb_block_wrapper' is added to custom repositories.
+17:11:03 INFO  : Platform 'mb_block_wrapper' is added to custom repositories.
+17:12:21 INFO  : Result from executing command 'getProjects': mb_block_wrapper
+17:12:21 INFO  : Result from executing command 'getPlatforms': mb_block_wrapper|C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/mb_block_wrapper.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+17:12:22 INFO  : Checking for BSP changes to sync application flags for project 'mp_block_graphics'...
+17:13:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:13:50 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:13:50 INFO  : 'jtag frequency' command is executed.
+17:13:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:13:51 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/_ide/bitstream/mb_block_wrapper.bit"
+17:13:51 INFO  : Context for processor 'microblaze_0' is selected.
+17:13:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/hw/mb_block_wrapper.xsa'.
+17:13:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:13:51 INFO  : Context for processor 'microblaze_0' is selected.
+17:13:51 INFO  : System reset is completed.
+17:13:54 INFO  : 'after 3000' command is executed.
+17:13:55 INFO  : Context for processor 'microblaze_0' is selected.
+17:13:55 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/Debug/mp_block_graphics.elf' is downloaded to processor 'microblaze_0'.
+17:13:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/_ide/bitstream/mb_block_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/hw/mb_block_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/Debug/mp_block_graphics.elf
+----------------End of Script----------------
+
+17:13:55 INFO  : Context for processor 'microblaze_0' is selected.
+17:13:55 INFO  : 'con' command is executed.
+17:13:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:13:55 INFO  : Disconnected from the channel tcfchan#2.
+17:15:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:10 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:15:10 INFO  : 'jtag frequency' command is executed.
+17:15:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:15:11 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/_ide/bitstream/mb_block_wrapper.bit"
+17:15:11 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/hw/mb_block_wrapper.xsa'.
+17:15:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:15:11 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:11 INFO  : System reset is completed.
+17:15:14 INFO  : 'after 3000' command is executed.
+17:15:14 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:15 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/Debug/mp_block_graphics.elf' is downloaded to processor 'microblaze_0'.
+17:15:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/_ide/bitstream/mb_block_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/hw/mb_block_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/Debug/mp_block_graphics.elf
+----------------End of Script----------------
+
+17:15:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:15 INFO  : 'con' command is executed.
+17:15:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:15:15 INFO  : Disconnected from the channel tcfchan#3.
+17:15:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:15:35 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:15:35 INFO  : 'jtag frequency' command is executed.
+17:15:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:15:36 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/_ide/bitstream/mb_block_wrapper.bit"
+17:15:36 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/hw/mb_block_wrapper.xsa'.
+17:15:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:15:36 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:36 INFO  : System reset is completed.
+17:15:39 INFO  : 'after 3000' command is executed.
+17:15:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:39 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/Debug/mp_block_graphics.elf' is downloaded to processor 'microblaze_0'.
+17:15:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/_ide/bitstream/mb_block_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/hw/mb_block_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/Debug/mp_block_graphics.elf
+----------------End of Script----------------
+
+17:15:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:15:39 INFO  : 'con' command is executed.
+17:15:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:15:39 INFO  : Disconnected from the channel tcfchan#4.
+17:16:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:14 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:16:14 INFO  : 'jtag frequency' command is executed.
+17:16:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:16:15 INFO  : Device configured successfully with "C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/_ide/bitstream/mb_block_wrapper.bit"
+17:16:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:16:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/hw/mb_block_wrapper.xsa'.
+17:16:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:16:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:16:15 INFO  : System reset is completed.
+17:16:18 INFO  : 'after 3000' command is executed.
+17:16:18 INFO  : Context for processor 'microblaze_0' is selected.
+17:16:18 INFO  : The application 'C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/Debug/mp_block_graphics.elf' is downloaded to processor 'microblaze_0'.
+17:16:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/_ide/bitstream/mb_block_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mb_block_wrapper/export/mb_block_wrapper/hw/mb_block_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/ece385/ECE385/lab7_1/realreallab7_sdk/mp_block_graphics/Debug/mp_block_graphics.elf
+----------------End of Script----------------
+
+17:16:18 INFO  : Context for processor 'microblaze_0' is selected.
+17:16:18 INFO  : 'con' command is executed.
+17:16:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:16:18 INFO  : Disconnected from the channel tcfchan#5.
