@@ -187,3 +187,283 @@ con
 23:05:09 INFO  : Build configuration of 'final_system' is updated to 'Release'
 23:05:09 INFO  : Build configuration of system project is automatically updated to 'Release'.
 23:05:09 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:05:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:05:36 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+23:05:36 INFO  : 'jtag frequency' command is executed.
+23:05:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:05:37 INFO  : Device configured successfully with "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit"
+23:05:37 INFO  : Context for processor 'microblaze_0' is selected.
+23:05:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/final_top.xsa'.
+23:05:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:05:37 INFO  : Context for processor 'microblaze_0' is selected.
+23:05:37 INFO  : System reset is completed.
+23:05:40 INFO  : 'after 3000' command is executed.
+23:05:40 INFO  : Context for processor 'microblaze_0' is selected.
+23:05:40 INFO  : The application 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Release/final.elf' is downloaded to processor 'microblaze_0'.
+23:05:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/final_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Release/final.elf
+----------------End of Script----------------
+
+23:05:40 INFO  : Context for processor 'microblaze_0' is selected.
+23:05:40 INFO  : 'con' command is executed.
+23:05:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:05:40 INFO  : Disconnected from the channel tcfchan#17.
+23:12:54 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+23:13:02 INFO  : Result from executing command 'removePlatformRepo': 
+23:13:06 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:13:09 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:13:11 INFO  : Build configuration of 'final_system' is updated to 'Debug'
+23:13:11 INFO  : Build configuration of system project is automatically updated to 'Debug'.
+23:13:23 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:13:23 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+23:13:27 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:13:30 INFO  : The hardware specification used by project 'final' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+23:13:30 INFO  : The file 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream\final_top.bit' stored in project is removed.
+23:13:30 INFO  : The file 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream\final_top.mmi' stored in project is removed.
+23:13:30 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream' in project 'final'.
+23:13:36 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:13:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:13:49 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+23:13:49 INFO  : 'jtag frequency' command is executed.
+23:13:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:13:50 INFO  : Device configured successfully with "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit"
+23:13:50 INFO  : Context for processor 'microblaze_0' is selected.
+23:13:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/final_top.xsa'.
+23:13:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:13:50 INFO  : Context for processor 'microblaze_0' is selected.
+23:13:50 INFO  : System reset is completed.
+23:13:53 INFO  : 'after 3000' command is executed.
+23:13:53 INFO  : Context for processor 'microblaze_0' is selected.
+23:13:53 INFO  : The application 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf' is downloaded to processor 'microblaze_0'.
+23:13:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/final_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf
+----------------End of Script----------------
+
+23:13:53 INFO  : Context for processor 'microblaze_0' is selected.
+23:13:53 INFO  : 'con' command is executed.
+23:13:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:13:53 INFO  : Disconnected from the channel tcfchan#22.
+23:14:23 INFO  : Result from executing command 'removePlatformRepo': 
+23:14:28 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:14:31 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:14:48 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:14:51 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:14:54 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:15:07 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:15:07 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+23:15:16 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:15:27 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:15:35 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:15:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:15:46 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+23:15:46 INFO  : 'jtag frequency' command is executed.
+23:15:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:15:48 INFO  : Device configured successfully with "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit"
+23:15:48 INFO  : Context for processor 'microblaze_0' is selected.
+23:15:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/final_top.xsa'.
+23:15:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:15:48 INFO  : Context for processor 'microblaze_0' is selected.
+23:15:48 INFO  : System reset is completed.
+23:15:51 INFO  : 'after 3000' command is executed.
+23:15:51 INFO  : Context for processor 'microblaze_0' is selected.
+23:15:51 INFO  : The application 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf' is downloaded to processor 'microblaze_0'.
+23:15:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/final_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf
+----------------End of Script----------------
+
+23:15:51 INFO  : Context for processor 'microblaze_0' is selected.
+23:15:51 INFO  : 'con' command is executed.
+23:15:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:15:51 INFO  : Disconnected from the channel tcfchan#30.
+23:16:26 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+23:16:41 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:16:41 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+23:17:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:17:15 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+23:17:15 INFO  : 'jtag frequency' command is executed.
+23:17:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:17:17 INFO  : Device configured successfully with "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit"
+23:17:17 INFO  : Context for processor 'microblaze_0' is selected.
+23:17:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:17:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:17:17 INFO  : Context for processor 'microblaze_0' is selected.
+23:17:17 INFO  : System reset is completed.
+23:17:20 INFO  : 'after 3000' command is executed.
+23:17:20 INFO  : Context for processor 'microblaze_0' is selected.
+23:17:20 INFO  : The application 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf' is downloaded to processor 'microblaze_0'.
+23:17:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf
+----------------End of Script----------------
+
+23:17:20 INFO  : Context for processor 'microblaze_0' is selected.
+23:17:20 INFO  : 'con' command is executed.
+23:17:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:17:20 INFO  : Disconnected from the channel tcfchan#32.
+23:17:32 INFO  : Result from executing command 'removePlatformRepo': 
+23:17:39 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:17:42 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:17:49 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+23:18:03 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:18:03 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+23:18:10 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:18:14 INFO  : The hardware specification used by project 'final' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+23:18:14 INFO  : The file 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream\final_top.bit' stored in project is removed.
+23:18:14 INFO  : The file 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream\final_top.mmi' stored in project is removed.
+23:18:14 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream' in project 'final'.
+23:18:23 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:18:32 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:18:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:18:41 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+23:18:41 INFO  : 'jtag frequency' command is executed.
+23:18:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:18:41 ERROR : couldn't open "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit": no such file or directory
+23:18:41 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: couldn't open "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit": no such file or directory
+23:18:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+23:18:41 ERROR : couldn't open "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/final_top.bit": no such file or directory
+23:19:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:19:07 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+23:19:07 INFO  : 'jtag frequency' command is executed.
+23:19:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:19:08 INFO  : Device configured successfully with "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:19:08 INFO  : Context for processor 'microblaze_0' is selected.
+23:19:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+23:19:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:19:08 INFO  : Context for processor 'microblaze_0' is selected.
+23:19:08 INFO  : System reset is completed.
+23:19:11 INFO  : 'after 3000' command is executed.
+23:19:11 INFO  : Context for processor 'microblaze_0' is selected.
+23:19:11 INFO  : The application 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf' is downloaded to processor 'microblaze_0'.
+23:19:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf
+----------------End of Script----------------
+
+23:19:11 INFO  : Context for processor 'microblaze_0' is selected.
+23:19:11 INFO  : 'con' command is executed.
+23:19:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:19:11 INFO  : Disconnected from the channel tcfchan#37.
+23:19:28 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+23:20:19 INFO  : Result from executing command 'removePlatformRepo': 
+23:20:24 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:20:52 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:20:52 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+23:21:13 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:21:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:27 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+23:21:27 INFO  : 'jtag frequency' command is executed.
+23:21:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+23:21:28 INFO  : Device configured successfully with "C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/mb_usb_hdmi_top.bit"
+23:21:28 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/final_top.xsa'.
+23:21:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:21:28 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:28 INFO  : System reset is completed.
+23:21:31 INFO  : 'after 3000' command is executed.
+23:21:31 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:31 INFO  : The application 'C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf' is downloaded to processor 'microblaze_0'.
+23:21:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/final_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/kb40/Desktop/ECE385/labb6/final_proj_sdk/final/Debug/final.elf
+----------------End of Script----------------
+
+23:21:31 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:31 INFO  : 'con' command is executed.
+23:21:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:21:31 INFO  : Disconnected from the channel tcfchan#41.
+23:21:43 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+23:21:52 INFO  : Result from executing command 'removePlatformRepo': 
+23:21:59 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+23:22:21 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+23:22:21 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+23:22:37 INFO  : Checking for BSP changes to sync application flags for project 'final'...
+23:22:40 INFO  : The hardware specification used by project 'final' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+23:22:40 INFO  : The file 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+23:22:40 INFO  : The file 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+23:22:40 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\kb40\Desktop\ECE385\labb6\final_proj_sdk\final\_ide\bitstream' in project 'final'.
+23:22:49 INFO  : Checking for BSP changes to sync application flags for project 'final'...

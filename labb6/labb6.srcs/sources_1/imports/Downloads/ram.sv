@@ -18,7 +18,7 @@ logic [11:0] mem [0:640*480-1];
 
 initial
 begin
-	 $readmemh("ECE385/SSBU_Final_Destination.txt", mem);
+	 $readmemh("SSBU_Final_Destination.txt", mem);
 end
 
 
