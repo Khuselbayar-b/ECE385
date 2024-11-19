@@ -1,0 +1,23 @@
+Nothing to build in platform 'mb_intro_top'
+
+21:47:51 **** Incremental Build of configuration Debug for project mv_blinkk ****
+make all 
+'Building file: ../src/mp_blink.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mp_blink.o" -IC:/Users/realk/Desktop/labb6/labb6_sdk/mb_intro_top/export/mb_intro_top/sw/mb_intro_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mp_blink.d" -MT"src/mp_blink.o" -o "src/mp_blink.o" "../src/mp_blink.c"
+'Finished building: ../src/mp_blink.c'
+' '
+'Building target: mv_blinkk.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/realk/Desktop/labb6/labb6_sdk/mb_intro_top/export/mb_intro_top/sw/mb_intro_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mv_blinkk.elf"  ./src/mp_blink.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mv_blinkk.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mv_blinkk.elf  |tee "mv_blinkk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16504	   1368	   3168	  21040	   5230	mv_blinkk.elf
+'Finished building: mv_blinkk.elf.size'
+' '
+21:47:52 **** Incremental Build of configuration Debug for project mv_blinkk_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

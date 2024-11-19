@@ -1,0 +1,23 @@
+18:34:17 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/lab6part2_sdk/IDE.log'.
+18:34:19 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\lab6part2_sdk\temp_xsdb_launch_script.tcl
+18:34:19 INFO  : Registering command handlers for Vitis TCF services
+18:34:21 INFO  : Platform repository initialization has completed.
+18:34:22 INFO  : XSCT server has started successfully.
+18:34:23 INFO  : Successfully done setting XSCT server connection channel  
+18:34:23 INFO  : plnx-install-location is set to ''
+18:34:23 INFO  : Successfully done setting workspace for the tool. 
+18:34:23 INFO  : Successfully done query RDI_DATADIR 
+18:35:12 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+18:35:12 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+18:35:13 WARN  : An unexpected exception occurred in the module 'platform project logging'
+18:35:14 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+18:35:17 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+19:12:09 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/lab6part2_sdk/IDE.log'.
+19:12:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\lab6part2_sdk\temp_xsdb_launch_script.tcl
+19:12:12 INFO  : Platform repository initialization has completed.
+19:12:12 INFO  : XSCT server has started successfully.
+19:12:12 INFO  : plnx-install-location is set to ''
+19:12:12 INFO  : Successfully done setting XSCT server connection channel  
+19:12:12 INFO  : Successfully done setting workspace for the tool. 
+19:12:13 INFO  : Successfully done query RDI_DATADIR 
+19:12:13 INFO  : Registering command handlers for Vitis TCF services

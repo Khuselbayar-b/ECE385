@@ -1,0 +1,1207 @@
+19:12:53 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/IDE.log'.
+19:12:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+19:12:55 INFO  : Registering command handlers for Vitis TCF services
+19:12:56 INFO  : Platform repository initialization has completed.
+19:12:57 INFO  : XSCT server has started successfully.
+19:12:57 INFO  : plnx-install-location is set to ''
+19:12:57 INFO  : Successfully done setting XSCT server connection channel  
+19:12:57 INFO  : Successfully done query RDI_DATADIR 
+19:12:57 INFO  : Successfully done setting workspace for the tool. 
+19:13:31 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+19:13:31 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+19:13:32 WARN  : An unexpected exception occurred in the module 'platform project logging'
+19:13:33 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+19:13:35 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+02:06:00 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+02:06:00 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+02:06:02 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:07:41 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:09:20 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:10:13 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:23:27 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:26:11 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:31:39 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:46:20 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:46:41 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:50:53 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:51:00 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:51:27 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:52:18 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:52:36 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:56:41 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+02:58:48 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+03:03:59 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+03:07:33 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+03:08:55 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+03:10:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:10:39 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:10:39 INFO  : 'jtag frequency' command is executed.
+03:10:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:10:41 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:10:41 INFO  : Context for processor 'microblaze_0' is selected.
+03:10:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:10:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:10:41 INFO  : Context for processor 'microblaze_0' is selected.
+03:10:41 INFO  : System reset is completed.
+03:10:44 INFO  : 'after 3000' command is executed.
+03:10:44 INFO  : Context for processor 'microblaze_0' is selected.
+03:10:44 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+03:10:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+03:10:44 INFO  : Context for processor 'microblaze_0' is selected.
+03:10:44 INFO  : 'con' command is executed.
+03:10:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:10:44 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+03:11:30 INFO  : Disconnected from the channel tcfchan#2.
+03:11:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:11:31 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+03:11:31 INFO  : 'jtag frequency' command is executed.
+03:11:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+03:11:33 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+03:11:33 INFO  : Context for processor 'microblaze_0' is selected.
+03:11:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+03:11:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+03:11:33 INFO  : Context for processor 'microblaze_0' is selected.
+03:11:33 INFO  : System reset is completed.
+03:11:36 INFO  : 'after 3000' command is executed.
+03:11:36 INFO  : Context for processor 'microblaze_0' is selected.
+03:11:36 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+03:11:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+03:11:36 INFO  : Context for processor 'microblaze_0' is selected.
+03:11:36 INFO  : 'con' command is executed.
+03:11:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+03:11:36 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+03:23:12 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+03:26:13 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+03:26:13 WARN  : xsct server communication channel is not established.
+17:12:25 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+17:12:30 INFO  : XSCT server has started successfully.
+17:12:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:12:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:12:35 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:12:35 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:12:35 INFO  : 'jtag frequency' command is executed.
+17:12:35 INFO  : 'jtag frequency' command is executed.
+17:12:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:12:37 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+17:12:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:12:38 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+17:12:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+17:12:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+17:12:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:12:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:12:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:39 INFO  : System reset is completed.
+17:12:39 INFO  : System reset is completed.
+17:12:42 INFO  : 'after 3000' command is executed.
+17:12:45 INFO  : 'after 3000' command is executed.
+17:12:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:45 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:12:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:12:45 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:12:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:12:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:46 INFO  : 'con' command is executed.
+17:12:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:12:46 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+17:12:46 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:46 ERROR : Already running
+17:12:46 INFO  : Disconnected from the channel tcfchan#1.
+17:46:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:46:38 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:46:38 INFO  : 'jtag frequency' command is executed.
+17:46:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:46:39 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+17:46:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:46:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+17:46:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:46:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:46:40 INFO  : System reset is completed.
+17:46:43 INFO  : 'after 3000' command is executed.
+17:46:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:46:43 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:46:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:46:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:46:43 INFO  : 'con' command is executed.
+17:46:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:46:43 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+17:51:14 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+17:51:25 INFO  : Disconnected from the channel tcfchan#2.
+17:51:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:51:26 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:51:26 INFO  : 'jtag frequency' command is executed.
+17:51:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:51:28 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+17:51:28 INFO  : Context for processor 'microblaze_0' is selected.
+17:51:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+17:51:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:51:28 INFO  : Context for processor 'microblaze_0' is selected.
+17:51:29 INFO  : System reset is completed.
+17:51:32 INFO  : 'after 3000' command is executed.
+17:51:32 INFO  : Context for processor 'microblaze_0' is selected.
+17:51:32 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:51:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:51:32 INFO  : Context for processor 'microblaze_0' is selected.
+17:51:32 INFO  : 'con' command is executed.
+17:51:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:51:32 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+17:53:29 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+17:53:38 INFO  : Disconnected from the channel tcfchan#3.
+17:53:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:53:40 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:53:40 INFO  : 'jtag frequency' command is executed.
+17:53:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:53:41 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+17:53:41 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+17:53:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:53:42 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:42 INFO  : System reset is completed.
+17:53:45 INFO  : 'after 3000' command is executed.
+17:53:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:45 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:53:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:53:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:46 INFO  : 'con' command is executed.
+17:53:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:53:46 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+17:55:28 INFO  : Disconnected from the channel tcfchan#4.
+17:55:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:55:30 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+17:55:30 INFO  : 'jtag frequency' command is executed.
+17:55:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+17:55:33 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+17:55:33 INFO  : Context for processor 'microblaze_0' is selected.
+17:55:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+17:55:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:55:35 INFO  : Context for processor 'microblaze_0' is selected.
+17:55:35 INFO  : System reset is completed.
+17:55:38 INFO  : 'after 3000' command is executed.
+17:55:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:55:38 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+17:55:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+17:55:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:55:38 INFO  : 'con' command is executed.
+17:55:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:55:38 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+18:01:23 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+18:01:34 INFO  : Disconnected from the channel tcfchan#5.
+18:01:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:36 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+18:01:36 INFO  : 'jtag frequency' command is executed.
+18:01:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+18:01:37 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+18:01:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+18:01:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:01:38 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:38 INFO  : System reset is completed.
+18:01:41 INFO  : 'after 3000' command is executed.
+18:01:41 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:41 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+18:01:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+18:01:41 INFO  : Context for processor 'microblaze_0' is selected.
+18:01:41 INFO  : 'con' command is executed.
+18:01:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:01:41 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+18:30:34 INFO  : Disconnected from the channel tcfchan#6.
+18:30:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:30:35 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+18:30:35 INFO  : 'jtag frequency' command is executed.
+18:30:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+18:30:37 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+18:30:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+18:30:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:30:38 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:38 INFO  : System reset is completed.
+18:30:41 INFO  : 'after 3000' command is executed.
+18:30:41 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:41 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+18:30:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+18:30:42 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:42 INFO  : 'con' command is executed.
+18:30:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:30:42 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+18:36:45 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+18:37:25 INFO  : Disconnected from the channel tcfchan#7.
+18:37:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:37:27 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+18:37:27 INFO  : 'jtag frequency' command is executed.
+18:37:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+18:37:28 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+18:37:28 INFO  : Context for processor 'microblaze_0' is selected.
+18:37:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+18:37:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:37:29 INFO  : Context for processor 'microblaze_0' is selected.
+18:37:29 INFO  : System reset is completed.
+18:37:32 INFO  : 'after 3000' command is executed.
+18:37:32 INFO  : Context for processor 'microblaze_0' is selected.
+18:37:32 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+18:37:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+18:37:32 INFO  : Context for processor 'microblaze_0' is selected.
+18:37:32 INFO  : 'con' command is executed.
+18:37:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:37:32 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+18:39:38 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+18:39:43 INFO  : Disconnected from the channel tcfchan#8.
+18:39:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:39:44 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+18:39:44 INFO  : 'jtag frequency' command is executed.
+18:39:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+18:39:46 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+18:39:46 INFO  : Context for processor 'microblaze_0' is selected.
+18:39:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+18:39:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:39:46 INFO  : Context for processor 'microblaze_0' is selected.
+18:39:46 INFO  : System reset is completed.
+18:39:49 INFO  : 'after 3000' command is executed.
+18:39:49 INFO  : Context for processor 'microblaze_0' is selected.
+18:39:50 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+18:39:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+18:39:50 INFO  : Context for processor 'microblaze_0' is selected.
+18:39:50 INFO  : 'con' command is executed.
+18:39:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:39:50 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+18:40:51 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+18:41:13 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+18:41:27 INFO  : Disconnected from the channel tcfchan#9.
+18:41:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:41:28 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+18:41:28 INFO  : 'jtag frequency' command is executed.
+18:41:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+18:41:30 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+18:41:30 INFO  : Context for processor 'microblaze_0' is selected.
+18:41:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+18:41:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:41:31 INFO  : Context for processor 'microblaze_0' is selected.
+18:41:31 INFO  : System reset is completed.
+18:41:34 INFO  : 'after 3000' command is executed.
+18:41:34 INFO  : Context for processor 'microblaze_0' is selected.
+18:41:34 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+18:41:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+18:41:34 INFO  : Context for processor 'microblaze_0' is selected.
+18:41:34 INFO  : 'con' command is executed.
+18:41:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:41:34 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+19:40:27 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+19:41:08 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+19:41:24 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+19:41:28 INFO  : Disconnected from the channel tcfchan#10.
+19:41:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:41:29 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:41:29 INFO  : 'jtag frequency' command is executed.
+19:41:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:41:31 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:41:31 INFO  : Context for processor 'microblaze_0' is selected.
+19:41:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:41:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:41:32 INFO  : Context for processor 'microblaze_0' is selected.
+19:41:32 INFO  : System reset is completed.
+19:41:35 INFO  : 'after 3000' command is executed.
+19:41:35 INFO  : Context for processor 'microblaze_0' is selected.
+19:41:35 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+19:41:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+19:41:35 INFO  : Context for processor 'microblaze_0' is selected.
+19:41:35 INFO  : 'con' command is executed.
+19:41:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:41:35 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+19:42:35 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+19:42:42 INFO  : Disconnected from the channel tcfchan#14.
+19:42:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:42:43 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:42:43 INFO  : 'jtag frequency' command is executed.
+19:42:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:42:45 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:42:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:42:46 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:42:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:42:46 INFO  : Context for processor 'microblaze_0' is selected.
+19:42:46 INFO  : System reset is completed.
+19:42:49 INFO  : 'after 3000' command is executed.
+19:42:49 INFO  : Context for processor 'microblaze_0' is selected.
+19:42:49 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+19:42:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+19:42:49 INFO  : Context for processor 'microblaze_0' is selected.
+19:42:49 INFO  : 'con' command is executed.
+19:42:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:42:49 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+19:44:53 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+19:45:02 INFO  : Disconnected from the channel tcfchan#16.
+19:45:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:45:03 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:45:03 INFO  : 'jtag frequency' command is executed.
+19:45:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:45:04 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:45:04 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:45:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:45:05 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:05 INFO  : System reset is completed.
+19:45:08 INFO  : 'after 3000' command is executed.
+19:45:08 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:08 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+19:45:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+19:45:08 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:08 INFO  : 'con' command is executed.
+19:45:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:45:08 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+19:46:33 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+19:46:42 INFO  : Disconnected from the channel tcfchan#18.
+19:46:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:46:43 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:46:43 INFO  : 'jtag frequency' command is executed.
+19:46:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:46:44 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:46:44 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:46:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:46:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:45 INFO  : System reset is completed.
+19:46:48 INFO  : 'after 3000' command is executed.
+19:46:48 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:48 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+19:46:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+19:46:48 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:48 INFO  : 'con' command is executed.
+19:46:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:46:48 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+19:47:03 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+19:47:15 INFO  : Disconnected from the channel tcfchan#20.
+19:47:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:47:16 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:47:16 INFO  : 'jtag frequency' command is executed.
+19:47:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:47:17 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:47:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:47:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:47:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:47:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:47:18 INFO  : System reset is completed.
+19:47:21 INFO  : 'after 3000' command is executed.
+19:47:21 INFO  : Context for processor 'microblaze_0' is selected.
+19:47:21 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+19:47:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+19:47:22 INFO  : Context for processor 'microblaze_0' is selected.
+19:47:22 INFO  : 'con' command is executed.
+19:47:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:47:22 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+19:57:31 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+19:57:38 INFO  : Disconnected from the channel tcfchan#22.
+19:57:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:57:40 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+19:57:40 INFO  : 'jtag frequency' command is executed.
+19:57:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+19:57:42 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+19:57:42 INFO  : Context for processor 'microblaze_0' is selected.
+19:57:43 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+19:57:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:57:43 INFO  : Context for processor 'microblaze_0' is selected.
+19:57:43 INFO  : System reset is completed.
+19:57:46 INFO  : 'after 3000' command is executed.
+19:57:46 INFO  : Context for processor 'microblaze_0' is selected.
+19:57:46 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+19:57:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+19:57:46 INFO  : Context for processor 'microblaze_0' is selected.
+19:57:46 INFO  : 'con' command is executed.
+19:57:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:57:46 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+20:15:20 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+20:15:44 INFO  : Disconnected from the channel tcfchan#24.
+20:15:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:15:46 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:15:46 INFO  : 'jtag frequency' command is executed.
+20:15:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:15:47 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:15:47 INFO  : Context for processor 'microblaze_0' is selected.
+20:15:48 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:15:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:15:48 INFO  : Context for processor 'microblaze_0' is selected.
+20:15:48 INFO  : System reset is completed.
+20:15:51 INFO  : 'after 3000' command is executed.
+20:15:51 INFO  : Context for processor 'microblaze_0' is selected.
+20:15:52 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+20:15:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+20:15:52 INFO  : Context for processor 'microblaze_0' is selected.
+20:15:52 INFO  : 'con' command is executed.
+20:15:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:15:52 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+20:16:54 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+20:17:02 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+20:17:19 INFO  : Disconnected from the channel tcfchan#26.
+20:17:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:17:20 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:17:20 INFO  : 'jtag frequency' command is executed.
+20:17:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:17:22 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:17:22 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:17:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:17:23 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:23 INFO  : System reset is completed.
+20:17:26 INFO  : 'after 3000' command is executed.
+20:17:26 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:26 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+20:17:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+20:17:26 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:26 INFO  : 'con' command is executed.
+20:17:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:17:26 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+20:18:35 INFO  : Disconnected from the channel tcfchan#29.
+20:18:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:18:36 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:18:36 INFO  : 'jtag frequency' command is executed.
+20:18:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:18:38 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:18:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:18:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:18:39 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:39 INFO  : System reset is completed.
+20:18:42 INFO  : 'after 3000' command is executed.
+20:18:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:42 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+20:18:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+20:18:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:18:42 INFO  : 'con' command is executed.
+20:18:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:18:42 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+20:19:44 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+20:20:22 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+20:20:28 INFO  : The hardware specification used by project 'mb_usb' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:20:28 INFO  : The file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+20:20:28 INFO  : The file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+20:20:29 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream' in project 'mb_usb'.
+20:20:38 INFO  : Disconnected from the channel tcfchan#30.
+20:20:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:40 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:20:40 INFO  : 'jtag frequency' command is executed.
+20:20:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:20:41 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:20:41 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:20:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:20:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:42 INFO  : System reset is completed.
+20:20:45 INFO  : 'after 3000' command is executed.
+20:20:45 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:45 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+20:20:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+20:20:45 INFO  : Context for processor 'microblaze_0' is selected.
+20:20:45 INFO  : 'con' command is executed.
+20:20:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:20:45 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+20:31:47 INFO  : Disconnected from the channel tcfchan#32.
+20:31:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:31:48 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:31:48 INFO  : 'jtag frequency' command is executed.
+20:31:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:31:50 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:31:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:31:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:31:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:31:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:31:50 INFO  : System reset is completed.
+20:31:53 INFO  : 'after 3000' command is executed.
+20:31:53 INFO  : Context for processor 'microblaze_0' is selected.
+20:31:53 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+20:31:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+20:31:53 INFO  : Context for processor 'microblaze_0' is selected.
+20:31:53 INFO  : 'con' command is executed.
+20:31:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:31:53 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+20:37:59 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+20:38:34 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+20:38:41 INFO  : The hardware specification used by project 'mb_usb' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:38:41 INFO  : The file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+20:38:41 INFO  : The file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+20:38:41 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream' in project 'mb_usb'.
+20:38:55 INFO  : Disconnected from the channel tcfchan#33.
+20:38:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:38:56 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:38:56 INFO  : 'jtag frequency' command is executed.
+20:38:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:38:58 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:38:58 INFO  : Context for processor 'microblaze_0' is selected.
+20:38:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:38:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:38:59 INFO  : Context for processor 'microblaze_0' is selected.
+20:38:59 INFO  : System reset is completed.
+20:39:02 INFO  : 'after 3000' command is executed.
+20:39:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:39:02 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+20:39:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+20:39:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:39:02 INFO  : 'con' command is executed.
+20:39:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:39:02 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+20:43:48 INFO  : Disconnected from the channel tcfchan#35.
+20:48:47 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/IDE.log'.
+20:48:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+20:48:52 INFO  : XSCT server has started successfully.
+20:48:52 INFO  : plnx-install-location is set to ''
+20:48:52 INFO  : Successfully done setting XSCT server connection channel  
+20:48:52 INFO  : Successfully done setting workspace for the tool. 
+20:48:53 INFO  : Registering command handlers for Vitis TCF services
+20:48:55 INFO  : Platform repository initialization has completed.
+20:48:58 INFO  : Successfully done query RDI_DATADIR 
+20:49:10 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+20:49:24 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+20:49:24 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:49:53 INFO  : The hardware specification used by project 'mb_usb' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:49:53 INFO  : The file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+20:49:53 INFO  : The file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+20:49:53 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb\_ide\bitstream' in project 'mb_usb'.
+20:49:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:49:56 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+20:49:56 INFO  : 'jtag frequency' command is executed.
+20:49:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+20:49:58 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+20:49:58 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+20:49:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:49:58 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:58 INFO  : System reset is completed.
+20:50:01 INFO  : 'after 3000' command is executed.
+20:50:01 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:01 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+20:50:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+20:50:01 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:01 INFO  : 'con' command is executed.
+20:50:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:50:01 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\debugger_mb_usb-default.tcl'
+20:50:38 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+20:50:52 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+20:50:52 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm;xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:50:53 INFO  : Checking for BSP changes to sync application flags for project 'mb_usb'...
+21:03:11 INFO  : Disconnected from the channel tcfchan#2.
+21:03:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:03:13 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+21:03:13 INFO  : 'jtag frequency' command is executed.
+21:03:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:03:14 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+21:03:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:03:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+21:03:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:03:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:03:14 INFO  : System reset is completed.
+21:03:17 INFO  : 'after 3000' command is executed.
+21:03:17 INFO  : Context for processor 'microblaze_0' is selected.
+21:03:17 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+21:03:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+21:03:17 INFO  : Context for processor 'microblaze_0' is selected.
+21:03:17 INFO  : 'con' command is executed.
+21:03:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:03:17 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\systemdebugger_mb_usb_system_standalone.tcl'
+21:05:25 INFO  : Disconnected from the channel tcfchan#4.
+21:06:04 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/IDE.log'.
+21:06:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+21:06:06 INFO  : XSCT server has started successfully.
+21:06:06 INFO  : Successfully done setting XSCT server connection channel  
+21:06:06 INFO  : plnx-install-location is set to ''
+21:06:06 INFO  : Successfully done setting workspace for the tool. 
+21:06:07 INFO  : Registering command handlers for Vitis TCF services
+21:06:07 INFO  : Successfully done query RDI_DATADIR 
+21:06:08 INFO  : Platform repository initialization has completed.
+21:06:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:06:34 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+21:06:34 INFO  : 'jtag frequency' command is executed.
+21:06:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:06:35 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+21:06:36 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:36 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+21:06:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:06:36 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:36 INFO  : System reset is completed.
+21:06:39 INFO  : 'after 3000' command is executed.
+21:06:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:39 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+21:06:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+21:06:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:39 INFO  : 'con' command is executed.
+21:06:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:06:39 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\systemdebugger_mb_usb_system_standalone.tcl'
+21:07:01 INFO  : Disconnected from the channel tcfchan#1.
+13:35:00 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/IDE.log'.
+13:35:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+13:35:02 INFO  : XSCT server has started successfully.
+13:35:02 INFO  : plnx-install-location is set to ''
+13:35:02 INFO  : Successfully done setting XSCT server connection channel  
+13:35:02 INFO  : Successfully done setting workspace for the tool. 
+13:35:03 INFO  : Registering command handlers for Vitis TCF services
+13:35:03 INFO  : Successfully done query RDI_DATADIR 
+13:35:04 INFO  : Platform repository initialization has completed.
+16:43:58 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/IDE.log'.
+16:43:59 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+16:44:02 INFO  : Registering command handlers for Vitis TCF services
+16:44:03 INFO  : Platform repository initialization has completed.
+16:44:03 INFO  : XSCT server has started successfully.
+16:44:06 INFO  : Successfully done setting XSCT server connection channel  
+16:44:06 INFO  : plnx-install-location is set to ''
+16:44:06 INFO  : Successfully done query RDI_DATADIR 
+16:44:06 INFO  : Successfully done setting workspace for the tool. 
+16:48:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:48:40 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+16:48:40 INFO  : 'jtag frequency' command is executed.
+16:48:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:48:41 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+16:48:41 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+16:48:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:48:41 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:41 INFO  : System reset is completed.
+16:48:44 INFO  : 'after 3000' command is executed.
+16:48:45 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:45 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+16:48:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+16:48:45 INFO  : Context for processor 'microblaze_0' is selected.
+16:48:45 INFO  : 'con' command is executed.
+16:48:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:48:45 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\systemdebugger_mb_usb_system_standalone.tcl'
+16:49:05 INFO  : Disconnected from the channel tcfchan#1.
+16:49:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:05 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+16:49:05 INFO  : 'jtag frequency' command is executed.
+16:49:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+16:49:06 INFO  : Device configured successfully with "C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit"
+16:49:06 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+16:49:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:49:07 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:07 INFO  : System reset is completed.
+16:49:10 INFO  : 'after 3000' command is executed.
+16:49:10 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:10 INFO  : The application 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf' is downloaded to processor 'microblaze_0'.
+16:49:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf
+----------------End of Script----------------
+
+16:49:10 INFO  : Context for processor 'microblaze_0' is selected.
+16:49:10 INFO  : 'con' command is executed.
+16:49:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:49:10 INFO  : Launch script is exported to file 'C:\Users\realk\Desktop\labb6\reallab6part2_sdk\mb_usb_system\_ide\scripts\systemdebugger_mb_usb_system_standalone.tcl'
+16:50:05 INFO  : Disconnected from the channel tcfchan#2.
+16:40:16 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/IDE.log'.
+16:40:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+16:40:19 INFO  : Registering command handlers for Vitis TCF services
+16:40:19 INFO  : XSCT server has started successfully.
+16:40:20 INFO  : Platform repository initialization has completed.
+16:40:23 INFO  : Successfully done setting XSCT server connection channel  
+16:40:23 INFO  : plnx-install-location is set to ''
+16:40:23 INFO  : Successfully done query RDI_DATADIR 
+16:40:23 INFO  : Successfully done setting workspace for the tool. 
+03:58:42 DEBUG : Logs will be stored at 'C:/Users/realk/Desktop/labb6/reallab6part2_sdk/IDE.log'.
+03:58:43 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\realk\Desktop\labb6\reallab6part2_sdk\temp_xsdb_launch_script.tcl
+03:58:48 INFO  : XSCT server has started successfully.
+03:58:48 INFO  : plnx-install-location is set to ''
+03:58:48 INFO  : Successfully done setting XSCT server connection channel  
+03:58:48 INFO  : Registering command handlers for Vitis TCF services
+03:58:50 INFO  : Platform repository initialization has completed.
+03:58:53 INFO  : Successfully done setting workspace for the tool. 
+03:58:53 INFO  : Successfully done query RDI_DATADIR 

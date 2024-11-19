@@ -1,0 +1,732 @@
+!SESSION 2024-10-25 16:43:39.910 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\realk\Desktop\labb6\reallab6part2_sdk\.metadata\.bak_0.log
+Created Time: 2024-10-25 16:48:37.475
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.475
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa microblaze_0], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.491
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa microblaze_0], Result: [null, {"gpio_usb_int_S_AXI": {"name": "gpio_usb_int",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"gpio_usb_keycode_S_AXI": {"name": "gpio_usb_keycode",
+"base": "0x40010000",
+"high": "0x4001FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"gpio_usb_rst_S_AXI": {"name": "gpio_usb_rst",
+"base": "0x40020000",
+"high": "0x4002FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_axi_intc_s_axi": {"name": "microblaze_0_axi_intc",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "s_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"timer_usb_axi_S_AXI": {"name": "timer_usb_axi",
+"base": "0x41C00000",
+"high": "0x41C0FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"spi_usb_AXI_LITE": {"name": "spi_usb",
+"base": "0x44A00000",
+"high": "0x44A0FFFF",
+"size": "65536",
+"slaveintf": "AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x00007FFF",
+"size": "32768",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.491
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.491
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.499
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa mdm_1], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa mdm_1], Result: [null, {}]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.499
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa mdm_1], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.499
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa mdm_1], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.507
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.515
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.515
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.515
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:37.515
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:39.799
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:39.799
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.106
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.106
+!MESSAGE XSCT Command: [version -server], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.106
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.106
+!MESSAGE XSCT Command: [version], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.122
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.122
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.130
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.130
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.138
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.146
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.146
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.146
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.162
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.162
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.162
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.162
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.186
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.186
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.186
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.186
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.202
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.202
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.202
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.210
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.218
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.218
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000006A" && level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.234
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000006A" && level == 0}], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.234
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.234
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.234
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa microblaze_0], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.250
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.273
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.281
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000006A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.281
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.289
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.305
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.441
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:40.441
+!MESSAGE XSCT Command: [fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.712
+!MESSAGE XSCT command with result: [fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.752
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.872
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.872
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.928
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.928
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.928
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.928
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.936
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.936
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.944
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:41.944
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:44.953
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:44.954
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:45.091
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:45.091
+!MESSAGE XSCT Command: [dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:45.220
+!MESSAGE XSCT command with result: [dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:45.293
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:45.405
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:45.405
+!MESSAGE XSCT Command: [con], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:48:45.413
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-10-25 16:48:45.422
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-10-25 16:48:45.422
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.244
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.250
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.323
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.331
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.331
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.339
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.339
+!MESSAGE XSCT Command: [version -server], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.339
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.339
+!MESSAGE XSCT Command: [version], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.339
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.339
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.347
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.347
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.355
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.355
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.371
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.371
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.379
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.379
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.387
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.387
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.395
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.395
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.403
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.403
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.411
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.411
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.419
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000006A]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.419
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.427
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.435
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000006A" && level == 0}], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.443
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000006A" && level == 0}], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.443
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.443
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.459
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.459
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000006A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.459
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.475
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.475
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.499
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:05.499
+!MESSAGE XSCT Command: [fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:06.767
+!MESSAGE XSCT command with result: [fpga -file C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:06.783
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:06.837
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:06.837
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:07.064
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_0]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:07.072
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:07.080
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:07.080
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:07.088
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:07.088
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:07.096
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:07.096
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.112
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.114
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.123
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.123
+!MESSAGE XSCT Command: [dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.243
+!MESSAGE XSCT command with result: [dow C:/Users/realk/Desktop/labb6/reallab6part2_sdk/mb_usb/Debug/mb_usb.elf], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.299
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.307
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.315
+!MESSAGE XSCT Command: [con], Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:49:10.315
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-2: Launching SystemDebugger_mb_usb_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-10-25 16:49:10.323
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-10-25 16:49:10.323
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:50:05.378
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-133
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-25 16:50:05.381
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-133
+!SESSION 2024-10-30 16:39:56.423 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-10-30 16:40:14.498
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-10-30 16:40:19.098
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-10-30 16:40:19.099
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-10-30 16:40:19.099
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:19.788
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:19.789
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:19.803
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:23.353
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:23.353
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:23.354
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:23.354
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:23.355
+!MESSAGE XSCT Command: [setws C:/Users/realk/Desktop/labb6/reallab6part2_sdk], Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:23.364
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-10-30 16:40:23.367
+!MESSAGE XSCT command with result: [setws C:/Users/realk/Desktop/labb6/reallab6part2_sdk], Result: [null, ]. Thread: Thread-22
+!SESSION 2024-11-01 03:58:15.972 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2024-11-01 03:58:39.575
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-01 03:58:45.883
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-01 03:58:45.884
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-11-01 03:58:45.885
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:48.293
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:48.293
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:48.306
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:48.309
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:48.310
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:48.322
+!MESSAGE XSCT Command: [setws C:/Users/realk/Desktop/labb6/reallab6part2_sdk], Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:53.967
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:53.967
+!MESSAGE XSCT command with result: [setws C:/Users/realk/Desktop/labb6/reallab6part2_sdk], Result: [null, ]. Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:53.968
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 03:58:53.986
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-11-01 04:00:06.295
+!MESSAGE Opening file dialog using preferences. Current path: C:\Xilinx\Vitis\2022.2\data\embeddedsw\lib\fixed_hwplatforms, Local preference: scw_hwspec, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 04:00:25.081
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/realk/AppData/Local/Temp/hwspec_mb_block_wrapper14231188364917267819/mb_block_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 04:00:25.307
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/realk/AppData/Local/Temp/hwspec_mb_block_wrapper14231188364917267819/mb_block_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 04:00:25.333
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/realk/AppData/Local/Temp/hwspec_mb_block_wrapper14231188364917267819/mb_block_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 04:00:25.336
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/realk/AppData/Local/Temp/hwspec_mb_block_wrapper14231188364917267819/mb_block_wrapper.xsa], Result: [null, {"device": "7s50",
+"family": "spartan7",
+"timestamp": "Fri Nov  1 03:43:08 2024",
+"vivado_version": "2022.2",
+"part": "xc7s50csga324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 04:00:25.339
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/realk/AppData/Local/Temp/hwspec_mb_block_wrapper14231188364917267819/mb_block_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 04:00:25.344
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/realk/AppData/Local/Temp/hwspec_mb_block_wrapper14231188364917267819/mb_block_wrapper.xsa], Result: [null, {"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"hdmi_text_controller_0": {"hier_name": "hdmi_text_controller_0",
+"type": "hdmi_text_controller",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 04:00:51.395
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/Users/realk/AppData/Local/Temp/hwspec_mb_block_wrapper14231188364917267819/mb_block_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-11-01 04:00:51.401
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/realk/AppData/Local/Temp/hwspec_mb_block_wrapper14231188364917267819/mb_block_wrapper.xsa], Result: [null, ]. Thread: main
