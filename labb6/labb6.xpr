@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="C:/Users/realk/Desktop/labb6/labb6.xpr">
+<Project Version="7" Minor="61" Path="C:/Users/kb40/Desktop/ECE385/labb6/labb6.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="81a2db08a06a400e8e421780693d5cf6"/>
@@ -104,11 +104,11 @@
         <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_clk_wiz_1_0/mb_block_1_clk_wiz_1_0.xci">
           <Proxy FileSetName="mb_block_1_clk_wiz_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_axi_gpio_0_2/mb_block_1_axi_gpio_0_2.xci">
-          <Proxy FileSetName="mb_block_1_axi_gpio_0_2"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_axi_gpio_0_3/mb_block_1_axi_gpio_0_3.xci">
           <Proxy FileSetName="mb_block_1_axi_gpio_0_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_axi_gpio_0_2/mb_block_1_axi_gpio_0_2.xci">
+          <Proxy FileSetName="mb_block_1_axi_gpio_0_2"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/mb_block_1/hdl/mb_block_1_wrapper.v">
@@ -154,6 +154,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/ram.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/ram.sv"/>
+          <Attr Name="ImportTime" Val="1731989572"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/design_source/mb_usb_hdmi_top.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/lab6_2_provided/design_source/mb_usb_hdmi_top.sv"/>
@@ -161,6 +170,12 @@
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/ECE385/background.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../background.txt"/>
+          <Attr Name="ImportTime" Val="1731980198"/>
         </FileInfo>
       </File>
       <Config>
@@ -361,9 +376,7 @@
     </Run>
     <Run Id="mb_block_1_clk_wiz_1_0_synth_1" Type="Ft3:Synth" SrcSet="mb_block_1_clk_wiz_1_0" Part="xc7s50csga324-1" ConstrsSet="mb_block_1_clk_wiz_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/mb_block_1_clk_wiz_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/mb_block_1_clk_wiz_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/mb_block_1_clk_wiz_1_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -493,9 +506,7 @@
     </Run>
     <Run Id="mb_block_1_clk_wiz_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="mb_block_1_clk_wiz_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="mb_block_1_clk_wiz_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/mb_block_1_clk_wiz_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/mb_block_1_clk_wiz_1_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

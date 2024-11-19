@@ -146,6 +146,7 @@ module mb_usb_hdmi_top(
     
     //Color Mapper Module   
     color_mapper color_instance(
+        .Clk(clk_25MHz),
         .BallX(ballxsig),
         .BallY(ballysig),
         .DrawX(drawX),
