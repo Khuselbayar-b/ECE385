@@ -14,7 +14,8 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper ( input  logic [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
+module  color_mapper ( input Clk,
+                       input  logic [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
                        output logic [3:0]  Red, Green, Blue );
     
     logic ball_on;
@@ -45,7 +46,7 @@ module  color_mapper ( input  logic [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         else 
             ball_on = 1'b0;
      end 
-       
+       /*
     always_comb
     begin:RGB_Display
         if ((ball_on == 1'b1)) begin 
@@ -59,5 +60,20 @@ module  color_mapper ( input  logic [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Blue = 4'hf - DrawX[9:6];
         end      
     end 
+    */
+   // logic [23:0] data_out;
+    logic [18:0] index;
+    assign index = DrawY*640 + DrawX; 
+    logic [11:0] data_out;
+    frameRAM(.data_In(12'h0000), .write_address(12'h0000), .read_address(index), .we(1'b0), .Clk(Clk), .data_Out(data_out)
+    );
+    
+    always_comb begin
+        Red = data_out[11:8];
+        Green = data_out[7:4];
+        Blue = data_out[3:0];
+    end
     
 endmodule
+
+

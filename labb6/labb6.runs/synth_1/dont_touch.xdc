@@ -18,9 +18,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_
 # IP: bd/mb_block_1/ip/mb_block_1_mdm_1_0/mb_block_1_mdm_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_mdm_1_0 || ORIG_REF_NAME==mb_block_1_mdm_1_0} -quiet] -quiet
 
-# IP: bd/mb_block_1/ip/mb_block_1_clk_wiz_1_0/mb_block_1_clk_wiz_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_clk_wiz_1_0 || ORIG_REF_NAME==mb_block_1_clk_wiz_1_0} -quiet] -quiet
-
 # IP: bd/mb_block_1/ip/mb_block_1_rst_clk_wiz_1_100M_0/mb_block_1_rst_clk_wiz_1_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_rst_clk_wiz_1_100M_0 || ORIG_REF_NAME==mb_block_1_rst_clk_wiz_1_100M_0} -quiet] -quiet
 
@@ -63,4 +60,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_
 # IP: bd/mb_block_1/ip/mb_block_1_lmb_bram_0/mb_block_1_lmb_bram_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_lmb_bram_0 || ORIG_REF_NAME==mb_block_1_lmb_bram_0} -quiet] -quiet
 
-# XDC: c:/Users/realk/Desktop/labb6/labb6.gen/sources_1/bd/mb_block_1/mb_block_1_ooc.xdc
+# IP: bd/mb_block_1/ip/mb_block_1_clk_wiz_1_0/mb_block_1_clk_wiz_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_clk_wiz_1_0 || ORIG_REF_NAME==mb_block_1_clk_wiz_1_0} -quiet] -quiet
+
+# XDC: c:/Users/kb40/Desktop/ECE385/labb6/labb6.gen/sources_1/bd/mb_block_1/mb_block_1_ooc.xdc
