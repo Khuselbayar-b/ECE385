@@ -47,7 +47,7 @@ module mb_usb_hdmi_top(
 
     logic hsync, vsync, vde;
     logic [3:0] red, green, blue;
-    logic reset_ah;
+    logic reset_ah, left1, right1;
     
     assign reset_ah = reset_rtl_0;
     
@@ -141,11 +141,15 @@ module mb_usb_hdmi_top(
         .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
         .BallX(ballxsig),
         .BallY(ballysig),
-        .BallS(ballsizesig)
+        .BallS(ballsizesig),
+        .right(right1),
+        .left(left1)
     );
     
     //Color Mapper Module   
     color_mapper color_instance(
+        .left1(left1),
+        .right1(right1),
         .Clk(clk_25MHz),
         .BallX(ballxsig),
         .BallY(ballysig),
