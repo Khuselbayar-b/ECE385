@@ -66,27 +66,33 @@ endmodule
 
 
 module marioColors(
-     input logic [2:0] index,        // 3-bit index to select up to 8 colors
+     input logic [3:0] index,        // 3-bit index to select up to 8 colors
      output logic [11:0] color_out // 12-bit color output
 );
     // Register array to store the 12 most significant bits of the colors
-    logic [11:0] color_reg [0:7]; 
+    logic [11:0] palette_hex [0:13]; 
 
     // Initializing the register with the truncated 12-bit color values
     initial begin
-        color_reg[0] = 12'h808; // 0x800080 -> 0x800
-        color_reg[1] = 12'h000; // 0x000000 -> 0x000
-        color_reg[2] = 12'hfff; // 0xf8f8f8 -> 0xf80
-        color_reg[3] = 12'h903; // 0x903020 -> 0x903
-        color_reg[4] = 12'hf84; // 0xf84020 -> 0xf84
-        color_reg[5] = 12'hfdc; // 0xf8e0d0 -> 0xf8e
-        color_reg[6] = 12'hfcb; // 0xf8c0a8 -> 0xf8c
-        color_reg[7] = 12'h10f; // 0x1a1a5b -> 0x1a1
+        palette_hex[0]  = 12'h808;  // 0x800080 ? 0x808
+        palette_hex[1]  = 12'h000;  // 0x000000 ? 0x000
+        palette_hex[2]  = 12'hFFF;  // 0xf8f8f8 ? 0xFFF
+        palette_hex[3]  = 12'h932;  // 0x903020 ? 0x932
+        palette_hex[4]  = 12'hF82;  // 0xf84020 ? 0xF82
+        palette_hex[5]  = 12'hF97;  // 0xf89788 ? 0xF97
+        palette_hex[6]  = 12'hFED;  // 0xf8e0d0 ? 0xFED
+        palette_hex[7]  = 12'hFCA;  // 0xf8c0a8 ? 0xFCA
+        palette_hex[8]  = 12'hF90;  // 0xf89000 ? 0xF90
+        palette_hex[9]  = 12'hFD8;  // 0xf8d803 ? 0xFD8
+        palette_hex[10] = 12'h9EF;  // 0x9ceff7 ? 0x9EF
+        palette_hex[11] = 12'h449;  // 0x4a4a91 ? 0x449
+        palette_hex[12] = 12'h115;  // 0x1a1a5b ? 0x115
+        palette_hex[13] = 12'h66C;  // 0x6b6bc3 ? 0x66C
     end
 
     // Output the color based on the index
     always_comb begin
-        color_out = color_reg[index];
+        color_out = palette_hex[index];
     end
 endmodule
 
@@ -119,15 +125,15 @@ endmodule
 
 module  marioRunRAM
         (
-                input  [2:0] data_In,
+                input  [3:0] data_In,
                 input [15:0] write_address, read_address,
                 input we, Clk,
         
-                output logic [2:0] data_Out
+                output logic [3:0] data_Out
         );
         
         // mem has width of 3 bits and a total of 400 addresses
-        logic [2:0] mem [0:60*405-1];
+        logic [3:0] mem [0:60*360-1];
         
         initial
         begin

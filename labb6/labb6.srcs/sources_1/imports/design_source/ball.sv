@@ -29,9 +29,11 @@ module  ball
 );
     
 
+	 parameter int GROUND_Y = 270;
+	 parameter int GRAVITY = 40'd2;
 	 
     parameter [9:0] Ball_X_Center=320;  // Center position on the X axis
-    parameter [9:0] Ball_Y_Center=240;  // Center position on the Y axis
+    parameter [9:0] Ball_Y_Center=210;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
     parameter [9:0] Ball_Y_Min=0;       // Topmost point on the Y axis
@@ -49,39 +51,49 @@ module  ball
 
     always_comb begin
        
-//        Ball_Y_Motion_next = Ball_Y_Motion; // set default motion to be same as prev clock cycle 
-//        Ball_X_Motion_next = Ball_X_Motion;
-
         //modify to control ball motion with the keycode
         right = 0;
         left = 0;
-        if (keycode == 8'h1A) // W
-        begin
-            Ball_Y_Motion_next = -40'd1;
-            Ball_X_Motion_next = 0;
-        end
-        else if (keycode == 8'h16) //S
-        begin
-            Ball_Y_Motion_next = 40'd1;
-            Ball_X_Motion_next = 0;
+        Ball_X_Motion_next = 0;  // Default: Maintain X motion
+        Ball_Y_Motion_next = 0;
+        
+        
+        if (keycode == 8'h1A && (BallY + 60) == 270) // W
+            begin
+                Ball_Y_Motion_next = -40'd30;
+                Ball_X_Motion_next = 0;
             end
+//        else if (keycode == 8'h16) //S
+//            begin
+//                Ball_Y_Motion_next = 40'd1;
+//                Ball_X_Motion_next = 0;
+//            end
             
         else if (keycode == 8'h04) // A
-        begin
-            Ball_X_Motion_next = -40'd1;
-            Ball_Y_Motion_next = 0;
-            left = 1'b1;
-        end
+            begin
+                Ball_X_Motion_next = -40'd2;
+                Ball_Y_Motion_next = 0;
+                left = 1'b1;
+            end
         else if (keycode == 8'h07) // D
-        begin
-            Ball_X_Motion_next = 40'd1;
-            Ball_Y_Motion_next = 0;
-            right = 1'b1;
-        end
-        else begin
-             Ball_X_Motion_next = 0;
-             Ball_Y_Motion_next = 0;
-        end
+            begin
+                Ball_X_Motion_next = 40'd2;
+                Ball_Y_Motion_next = 0;
+                right = 1'b1;
+            end
+            
+         if ((BallY+60) < GROUND_Y || (BallX < 100) || (BallX+60) > 540) begin
+                Ball_Y_Motion_next = Ball_Y_Motion_next + GRAVITY;
+         end 
+
+        Ball_Y_next = BallY + Ball_Y_Motion_next;
+        
+        if ((BallY+60 > GROUND_Y) && (BallX > 100) && BallX+60 < 540) begin
+                Ball_Y_Motion_next = 0;    // Stop vertical motion
+                Ball_Y_next = Ball_Y_Center;   // Snap to ground
+         end 
+    end
+
 
 //        if ( (BallY + BallS) >= Ball_Y_Max )  // Ball is at the bottom edge, BOUNCE!
 //        begin
@@ -102,11 +114,12 @@ module  ball
 
        //fill in the rest of the motion equations here to bounce left and right
  
-    end
+   
 
-    assign BallS = 16;  // default ball size
-    assign Ball_X_next = (BallX + Ball_X_Motion_next);
-    assign Ball_Y_next = (BallY + Ball_Y_Motion_next);
+//    assign Ball_X_next = (BallX + Ball_X_Motion_next);
+//    assign Ball_Y_next = (BallY + Ball_Y_Motion_next);
+
+   assign Ball_X_next = BallX + Ball_X_Motion_next;
    
     always_ff @(posedge frame_clk) //make sure the frame clock is instantiated correctly
     begin: Move_Ball
@@ -121,16 +134,9 @@ module  ball
         end
         else 
         begin 
-
-//			Ball_Y_Motion <= Ball_Y_Motion_next; 
-//			Ball_X_Motion <= Ball_X_Motion_next; 
-
-            BallY <= Ball_Y_next;  // Update ball position
-            BallX <= Ball_X_next;
+			BallY <= Ball_Y_next; 
+			BallX <= Ball_X_next; 
 		end  
     end
 
-
-    
-      
 endmodule

@@ -63,4 +63,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_
 # IP: bd/mb_block_1/ip/mb_block_1_clk_wiz_1_0/mb_block_1_clk_wiz_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_1_clk_wiz_1_0 || ORIG_REF_NAME==mb_block_1_clk_wiz_1_0} -quiet] -quiet
 
-# XDC: c:/Users/realk/Desktop/ece385_final/ECE385/labb6/labb6.gen/sources_1/bd/mb_block_1/mb_block_1_ooc.xdc
+# XDC: c:/Users/kb40/Desktop/ECE385/labb6/labb6.gen/sources_1/bd/mb_block_1/mb_block_1_ooc.xdc

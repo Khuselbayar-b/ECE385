@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="C:/Users/realk/Desktop/ece385_final/ECE385/labb6/labb6.xpr">
+<Project Version="7" Minor="61" Path="C:/Users/kb40/Desktop/ECE385/labb6/labb6.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="81a2db08a06a400e8e421780693d5cf6"/>
@@ -95,20 +95,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_mdm_1_0/mb_block_1_mdm_1_0.xci">
-          <Proxy FileSetName="mb_block_1_mdm_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_clk_wiz_1_0/mb_block_1_clk_wiz_1_0.xci">
-          <Proxy FileSetName="mb_block_1_clk_wiz_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_axi_quad_spi_0_0/mb_block_1_axi_quad_spi_0_0.xci">
-          <Proxy FileSetName="mb_block_1_axi_quad_spi_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_axi_gpio_0_2/mb_block_1_axi_gpio_0_2.xci">
           <Proxy FileSetName="mb_block_1_axi_gpio_0_2"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_axi_gpio_0_3/mb_block_1_axi_gpio_0_3.xci">
           <Proxy FileSetName="mb_block_1_axi_gpio_0_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_mdm_1_0/mb_block_1_mdm_1_0.xci">
+          <Proxy FileSetName="mb_block_1_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_axi_quad_spi_0_0/mb_block_1_axi_quad_spi_0_0.xci">
+          <Proxy FileSetName="mb_block_1_axi_quad_spi_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_block_1.bd" FileRelPathName="ip/mb_block_1_clk_wiz_1_0/mb_block_1_clk_wiz_1_0.xci">
+          <Proxy FileSetName="mb_block_1_clk_wiz_1_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/mb_block_1/hdl/mb_block_1_wrapper.v">
@@ -198,8 +198,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Downloads/mario_run.txt">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/mario_run.txt"/>
-          <Attr Name="ImportTime" Val="1732156206"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/mario_run.txt"/>
+          <Attr Name="ImportTime" Val="1732219825"/>
         </FileInfo>
       </File>
       <Config>

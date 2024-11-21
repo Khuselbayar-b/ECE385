@@ -21,7 +21,7 @@
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uiprogram.fpga" value="true"/>
     <stringAttribute key="com.xilinx.sdk.tcf.debug.uiproject.name" value="final"/>
     <stringAttribute key="com.xilinx.sdk.tcf.debug.uips.device" value="Auto Detect"/>
-    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uips7.init" value="true"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uips7.init" value="false"/>
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uips7.post" value="false"/>
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.apu" value="false"/>
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.lock.step" value="false"/>
@@ -45,7 +45,7 @@
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.is_default_gdb_port" value="true"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.launch.work.dir" value=""/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis" value="false"/>
-    <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis.linux.hw.target" value=""/>
+    <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis.linux.hw.target" value="Local"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.sdsoc.project" value="final"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.secure.debug" value="false"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.secure.debug.image" value=""/>
@@ -57,20 +57,31 @@
     <stringAttribute key="ide.launch.pdi.path" value=""/>
     <stringAttribute key="ide.launch.program.device" value="false"/>
     <stringAttribute key="launch.version" value="2022.2"/>
-    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/final"/>
-    </listAttribute>
-    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
-        <listEntry value="4"/>
-    </listAttribute>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME" value="mb-gdb"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.HOST" value="127.0.0.1"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.PORT" value="3002"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.REMOTE_TCP" value="true"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.internal.ui.launching.RemoteApplicationCDebuggerTab.DEFAULTS_SET" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="gdbserver"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/final.elf"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="final"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
     <booleanAttribute key="org.eclipse.tcf.debug.AttachChildren" value="true"/>
     <booleanAttribute key="org.eclipse.tcf.debug.DisconnectOnCtxExit" value="false"/>
     <booleanAttribute key="org.eclipse.tcf.debug.StopAtEntry" value="false"/>
     <booleanAttribute key="org.eclipse.tcf.debug.StopAtMain" value="true"/>
     <booleanAttribute key="org.eclipse.tcf.debug.UseContextFilter" value="false"/>
     <booleanAttribute key="org.eclipse.tcf.debug.UseTerminal" value="false"/>
+    <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
     <stringAttribute key="profile.data.transfer.trace" value="coarse"/>
     <stringAttribute key="profile.enable" value="true"/>
     <stringAttribute key="profile.mode" value="default"/>
     <stringAttribute key="profile.stall.trace" value="off"/>
+    <booleanAttribute key="sdk.gdb.proc.stop_at_enty" value="false"/>
+    <stringAttribute key="sdk.gdb.process.filter" value="microblaze.*#0"/>
 </launchConfiguration>
