@@ -63,11 +63,11 @@ module  color_mapper (
 //             sprite_index <= sprite_index + 1; // Increment the counter
 //    end
 
-    localparam int FRAME_DELAY = 131071; // Adjust for your clock frequency and desired frame rate
-    localparam int MAX_INDEX = 8;           // Maximum sprite index
+    localparam int FRAME_DELAY = 1048575; // Adjust for your clock frequency and desired frame rate
+    localparam int MAX_INDEX = 7;           // Maximum sprite index
 
     // Registers
-    logic [16:0] frame_counter; // 24-bit counter for delay (example size)
+    logic [19:0] frame_counter; // 24-bit counter for delay (example size)
     
     always_ff @(posedge Clk) begin
             if (frame_counter == FRAME_DELAY - 1) begin
@@ -82,35 +82,24 @@ module  color_mapper (
     end
     
     always_comb begin
-     if ((DrawX >= BallX) && (DrawX < BallX + 45) && 
+     if ((DrawX > BallX) && (DrawX < BallX + 45) && 
         (DrawY >= BallY) && (DrawY < BallY + 60)) 
             ball_on = 1'b1;
         else 
             ball_on = 1'b0;
             
     if (right1) begin
-        spriteX = DrawX - BallX + (45 * sprite_index);
-        spriteY = DrawY - BallY;
-    end else begin
-        spriteX = DrawX - BallX;
-        spriteY = DrawY - BallY;
-    end
-    
-    if (right1) begin
-        spriteX = (DrawX - BallX) + (44 * sprite_index); // Offset for active frame
+        spriteX = (DrawX - BallX) + (45 * sprite_index); // Offset for active frame
     end else if (left1) begin
-        spriteX = (DrawX - BallX) + (44 * (44 - sprite_index)); // Reverse direction
+        spriteX = ((45 - (DrawX - BallX)) + (45 * sprite_index)); // Reverse direction
     end else 
-        spriteX = (DrawX - BallX) + 1; 
-    
-    marioIndex = spriteY * 405 + spriteX;
+        spriteX = (DrawX - BallX); 
+    spriteY = DrawY - BallY;
+    marioIndex = spriteY * 360 + spriteX;
         
     end
     
-   
-    
-    
-
+  
    // logic [23:0] data_out;
     logic [18:0] index;
     assign index = DrawY*640 + DrawX; 
@@ -122,7 +111,7 @@ module  color_mapper (
     
     ColorRegister(.index(color_ind), .color_out(data_out));
     
-    logic [2:0] mario_ind;
+    logic [3:0] mario_ind;
     logic [11:0] mario_out;
     
     marioRunRAM(.data_In(12'h0000), .write_address(12'h0000), .read_address(marioIndex), .we(1'b0), .Clk(Clk), .data_Out(mario_ind)
