@@ -23,16 +23,16 @@ module  ball
 
     output logic [9:0]  BallX, 
     output logic [9:0]  BallY, 
-    output logic [9:0]  BallS, 
-    output logic right,
-    output logic left
+    output logic right1,
+    output logic left1,
+    output logic punch1
 );
     
 
 	 parameter int GROUND_Y = 270;
-	 parameter int GRAVITY = 40'd2;
+	 parameter int GRAVITY = 20'd2;
 	 
-    parameter [9:0] Ball_X_Center=320;  // Center position on the X axis
+    parameter [9:0] Ball_X_Center=250;  // Center position on the X axis
     parameter [9:0] Ball_Y_Center=210;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
@@ -52,15 +52,16 @@ module  ball
     always_comb begin
        
         //modify to control ball motion with the keycode
-        right = 0;
-        left = 0;
+        right1 = 0;
+        left1 = 0;
+        punch1 = 0;
         Ball_X_Motion_next = 0;  // Default: Maintain X motion
         Ball_Y_Motion_next = 0;
         
         
         if (keycode == 8'h1A && (BallY + 60) == 270) // W
             begin
-                Ball_Y_Motion_next = -40'd30;
+                Ball_Y_Motion_next = -20'd80;
                 Ball_X_Motion_next = 0;
             end
 //        else if (keycode == 8'h16) //S
@@ -71,53 +72,33 @@ module  ball
             
         else if (keycode == 8'h04) // A
             begin
-                Ball_X_Motion_next = -40'd2;
+                Ball_X_Motion_next = -20'd2;
                 Ball_Y_Motion_next = 0;
-                left = 1'b1;
+                left1 = 1'b1;
             end
         else if (keycode == 8'h07) // D
             begin
-                Ball_X_Motion_next = 40'd2;
+                Ball_X_Motion_next = 20'd2;
                 Ball_Y_Motion_next = 0;
-                right = 1'b1;
+                right1 = 1'b1;
+            end
+         else if (keycode == 8'h2C) // SPACE 
+            begin
+                punch1 = 1'b1;
             end
             
-         if ((BallY+60) < GROUND_Y || (BallX < 100) || (BallX+60) > 540) begin
+         if ((BallY+60) < GROUND_Y || (BallX < 70) || (BallX+60) > 570) begin
                 Ball_Y_Motion_next = Ball_Y_Motion_next + GRAVITY;
          end 
 
         Ball_Y_next = BallY + Ball_Y_Motion_next;
         
-        if ((BallY+60 > GROUND_Y) && (BallX > 100) && BallX+60 < 540) begin
+        if ((BallY+60 > GROUND_Y) && (BallX > 70) && BallX+60 < 570) begin
                 Ball_Y_Motion_next = 0;    // Stop vertical motion
                 Ball_Y_next = Ball_Y_Center;   // Snap to ground
          end 
     end
 
-
-//        if ( (BallY + BallS) >= Ball_Y_Max )  // Ball is at the bottom edge, BOUNCE!
-//        begin
-//            Ball_Y_Motion_next = (~ (Ball_Y_Step) + 1'b1);  // set to -1 via 2's complement.
-//        end
-//        else if ( (BallY - BallS) <= Ball_Y_Min )  // Ball is at the top edge, BOUNCE!
-//        begin
-//            Ball_Y_Motion_next = Ball_Y_Step;
-//        end  
-//        else if ( (BallX - BallS) <= Ball_X_Min )  // Ball is at the left edge, BOUNCE!
-//        begin
-//            Ball_X_Motion_next = Ball_X_Step;
-//        end  
-//        else if ( (BallX + BallS) >= Ball_X_Max )  // Ball is at the right edge, BOUNCE!
-//        begin
-//            Ball_X_Motion_next = (~ (Ball_X_Step) + 1'b1);  // set to -1 via 2's complement.
-//        end 
-
-       //fill in the rest of the motion equations here to bounce left and right
- 
-   
-
-//    assign Ball_X_next = (BallX + Ball_X_Motion_next);
-//    assign Ball_Y_next = (BallY + Ball_Y_Motion_next);
 
    assign Ball_X_next = BallX + Ball_X_Motion_next;
    

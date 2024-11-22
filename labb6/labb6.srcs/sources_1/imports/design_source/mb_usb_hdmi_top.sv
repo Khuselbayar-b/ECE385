@@ -43,11 +43,11 @@ module mb_usb_hdmi_top(
     logic [31:0] keycode0_gpio, keycode1_gpio;
     logic clk_25MHz, clk_125MHz, clk, clk_100MHz;
     logic locked;
-    logic [9:0] drawX, drawY, ballxsig, ballysig, ballsizesig;
+    logic [9:0] drawX, drawY, ballxsig, ballysig, luigixsig, luigiysig;
 
     logic hsync, vsync, vde;
     logic [3:0] red, green, blue;
-    logic reset_ah, left1, right1;
+    logic reset_ah, left1, right1, punch1, left2, right2, punch2;
     
     assign reset_ah = reset_rtl_0;
     
@@ -68,6 +68,7 @@ module mb_usb_hdmi_top(
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );
+
     
     mb_block_1_wrapper mb_block_i (
         .clk_100MHz(Clk),
@@ -135,27 +136,48 @@ module mb_usb_hdmi_top(
 
     
     //Ball Module
-    ball ball_instance(
+    ball mario_instance(
         .Reset(reset_ah),
         .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
         .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
         .BallX(ballxsig),
         .BallY(ballysig),
-        .BallS(ballsizesig),
-        .right(right1),
-        .left(left1)
+        .right1(right1),
+        .left1(left1),
+        .punch1(punch1)
+    );
+    
+     luigi luigi_instance1(
+        .Reset(reset_ah),
+        .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
+        .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
+        .LuigiX(luigixsig),
+        .LuigiY(luigiysig),
+        .right2(right2),
+        .left2(left2),
+        .punch2(punch2)
     );
     
     //Color Mapper Module   
     color_mapper color_instance(
         .left1(left1),
         .right1(right1),
+        .punch1(punch1),
+        
+        .left2(left2),
+        .right2(right2),
+        .punch2(punch2),
+        
         .Clk(clk_25MHz),
+        
         .BallX(ballxsig),
         .BallY(ballysig),
+        
+        .luigiX(luigixsig),
+        .luigiY(luigiysig),
+        
         .DrawX(drawX),
         .DrawY(drawY),
-        .Ball_size(ballsizesig),
         .Red(red),
         .Green(green),
         .Blue(blue)
