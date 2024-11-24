@@ -88,6 +88,8 @@ module marioColors(
         palette_hex[11] = 12'h449;  // 0x4a4a91 ? 0x449
         palette_hex[12] = 12'h115;  // 0x1a1a5b ? 0x115
         palette_hex[13] = 12'h66C;  // 0x6b6bc3 ? 0x66C
+        palette_hex[14] = 12'h060;  // 0x1a1a5b ? 0x115
+        palette_hex[15] = 12'h0a0;  // 0x6b6bc3 ? 0x66C
     end
 
     // Output the color based on the index
@@ -95,33 +97,6 @@ module marioColors(
         color_out = palette_hex[index];
     end
 endmodule
-
-
-//module  marioRAM
-//        (
-//                input  [11:0] data_In,
-//                input [18:0] write_address, read_address,
-//                input we, Clk,
-        
-//                output logic [11:0] data_Out
-//        );
-        
-//        // mem has width of 3 bits and a total of 400 addresses
-//        logic [3:0] mem [0:140*230-1];
-        
-//        initial
-//        begin
-//             $readmemh("mario.txt", mem);
-//        end
-        
-        
-//        always_ff @ (posedge Clk) begin
-//            if (we)
-//                mem[write_address] <= data_In;
-//            data_Out<= mem[read_address];
-//        end
-
-//endmodule
 
 module  marioRunRAM
         (
@@ -138,6 +113,58 @@ module  marioRunRAM
         initial
         begin
              $readmemh("mario_run.txt", mem);
+        end
+        
+        
+        always_ff @ (posedge Clk) begin
+            if (we)
+                mem[write_address] <= data_In;
+            data_Out<= mem[read_address];
+        end
+
+endmodule
+
+module  marioPunchRAM
+        (
+                input  [3:0] data_In,
+                input [15:0] write_address, read_address,
+                input we, Clk,
+        
+                output logic [3:0] data_Out
+        );
+        
+        // mem has width of 3 bits and a total of 400 addresses
+        logic [3:0] mem [0:60*360-1];
+        
+        initial
+        begin
+             $readmemh("mario_punch.txt", mem);
+        end
+        
+        
+        always_ff @ (posedge Clk) begin
+            if (we)
+                mem[write_address] <= data_In;
+            data_Out<= mem[read_address];
+        end
+
+endmodule
+
+module  luigiRunRAM
+        (
+                input  [3:0] data_In,
+                input [15:0] write_address, read_address,
+                input we, Clk,
+        
+                output logic [3:0] data_Out
+        );
+        
+        // mem has width of 3 bits and a total of 400 addresses
+        logic [3:0] mem [0:60*360-1];
+        
+        initial
+        begin
+             $readmemh("luigi_run.txt", mem);
         end
         
         

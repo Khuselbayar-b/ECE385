@@ -94,6 +94,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/kb40/Desktop/ECE385/labb6/labb6.srcs/sources_1/imports/design_source/VGA_controller.sv
   C:/Users/kb40/Desktop/ECE385/labb6/labb6.srcs/sources_1/imports/design_source/ball.sv
   C:/Users/kb40/Desktop/ECE385/labb6/labb6.srcs/sources_1/imports/srcs/hex_driver.sv
+  C:/Users/kb40/Desktop/ECE385/labb6/labb6.srcs/sources_1/new/luigi.sv
   C:/Users/kb40/Desktop/ECE385/labb6/labb6.srcs/sources_1/imports/Downloads/ram.sv
   C:/Users/kb40/Desktop/ECE385/labb6/labb6.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv
 }

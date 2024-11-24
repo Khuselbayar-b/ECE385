@@ -264,3 +264,30 @@ timestamp=[2024-11-21 17:52:49], mode=PLATFORM_GENERATION, duration=0:00:04.443,
 timestamp=[2024-11-21 17:53:08], mode=PLATFORM_GENERATION, duration=0:00:10.148, duration_ms=10148, data={name=mb_usb_hdmi_top}
 timestamp=[2024-11-21 17:53:10], mode=BUILD, duration=0:00:02.623, duration_ms=2623, data={name=final, configuration=Debug, clean_build=false}
 timestamp=[2024-11-21 17:53:11], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=final_system, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 14:44:25], mode=WORKBENCH_START, duration=0:00:06.834, duration_ms=6834, data={}
+timestamp=[2024-11-22 14:44:25], mode=WORKBENCH_UI_INIT, duration=0:00:00.748, duration_ms=748, data={editors_count=5, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,final,final_system,mb_usb_hdmi_top}
+timestamp=[2024-11-22 14:44:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.061, duration_ms=1061, data={}
+timestamp=[2024-11-22 15:21:54], mode=PLATFORM_GENERATION, duration=0:00:05.196, duration_ms=5196, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 15:22:42], mode=PLATFORM_GENERATION, duration=0:00:10.564, duration_ms=10564, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 15:22:45], mode=BUILD, duration=0:00:03.072, duration_ms=3072, data={name=final, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 15:22:46], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=final_system, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 15:54:24], mode=PLATFORM_GENERATION, duration=0:00:07.044, duration_ms=7044, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 15:54:39], mode=PLATFORM_GENERATION, duration=0:00:10.336, duration_ms=10336, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 15:54:42], mode=BUILD, duration=0:00:02.622, duration_ms=2622, data={name=final, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 15:54:43], mode=BUILD, duration=0:00:00.233, duration_ms=233, data={name=final_system, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 16:06:04], mode=PLATFORM_GENERATION, duration=0:00:04.249, duration_ms=4249, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 16:06:27], mode=PLATFORM_GENERATION, duration=0:00:09.896, duration_ms=9896, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 16:06:30], mode=BUILD, duration=0:00:02.373, duration_ms=2373, data={name=final, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 16:06:31], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=final_system, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 16:12:57], mode=PLATFORM_GENERATION, duration=0:00:04.270, duration_ms=4270, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 16:13:08], mode=PLATFORM_GENERATION, duration=0:00:09.607, duration_ms=9607, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 16:13:10], mode=BUILD, duration=0:00:02.309, duration_ms=2309, data={name=final, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 16:13:11], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=final_system, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 17:24:09], mode=PLATFORM_GENERATION, duration=0:00:06.580, duration_ms=6580, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 17:24:25], mode=PLATFORM_GENERATION, duration=0:00:10.823, duration_ms=10823, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 17:24:29], mode=BUILD, duration=0:00:02.947, duration_ms=2947, data={name=final, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 17:24:29], mode=BUILD, duration=0:00:00.204, duration_ms=204, data={name=final_system, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 17:32:44], mode=PLATFORM_GENERATION, duration=0:00:04.260, duration_ms=4260, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 17:33:19], mode=PLATFORM_GENERATION, duration=0:00:10.539, duration_ms=10539, data={name=mb_usb_hdmi_top}
+timestamp=[2024-11-22 17:33:22], mode=BUILD, duration=0:00:02.326, duration_ms=2326, data={name=final, configuration=Debug, clean_build=false}
+timestamp=[2024-11-22 17:33:23], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=final_system, configuration=Debug, clean_build=false}
