@@ -47,7 +47,7 @@ module mb_usb_hdmi_top(
 
     logic hsync, vsync, vde;
     logic [3:0] red, green, blue;
-    logic reset_ah, left1, right1, punch1, left2, right2, punch2;
+    logic reset_ah, left1, right1, punch1, left2, right2, punch2, jump1;
     
     assign reset_ah = reset_rtl_0;
     
@@ -139,7 +139,10 @@ module mb_usb_hdmi_top(
     ball mario_instance(
         .Reset(reset_ah),
         .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
-        .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
+        .keycode0(keycode0_gpio[7:0]),    
+        .keycode1(keycode0_gpio[15:8]),
+        .keycode2(keycode0_gpio[23:16]),    
+        .keycode3(keycode0_gpio[31:24]),
         .BallX(ballxsig),
         .BallY(ballysig),
         .right1(right1),
@@ -150,7 +153,10 @@ module mb_usb_hdmi_top(
      luigi luigi_instance1(
         .Reset(reset_ah),
         .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
-        .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
+        .keycode0(keycode0_gpio[7:0]),    
+        .keycode1(keycode0_gpio[15:8]),
+        .keycode2(keycode0_gpio[23:16]),    
+        .keycode3(keycode0_gpio[31:24]),
         .LuigiX(luigixsig),
         .LuigiY(luigiysig),
         .right2(right2),

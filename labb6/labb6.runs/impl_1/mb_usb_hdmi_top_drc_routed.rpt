@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Fri Nov 22 17:30:32 2024
+| Date         : Sun Nov 24 17:06:40 2024
 | Host         : ECEB-3022-11 running 64-bit major release  (build 9200)
 | Command      : report_drc -file mb_usb_hdmi_top_drc_routed.rpt -pb mb_usb_hdmi_top_drc_routed.pb -rpx mb_usb_hdmi_top_drc_routed.rpx
 | Design       : mb_usb_hdmi_top
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 52
+             Violations found: 54
 +----------+----------+--------------------------------------------------------------+------------+
 | Rule     | Severity | Description                                                  | Violations |
 +----------+----------+--------------------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties          | 1          |
-| DPIP-1   | Warning  | Input pipelining                                             | 11         |
+| DPIP-1   | Warning  | Input pipelining                                             | 13         |
 | PDCN-137 | Warning  | enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff | 40         |
 +----------+----------+--------------------------------------------------------------+------------+
 
@@ -100,207 +100,217 @@ Related violations: <none>
 
 DPIP-1#11 Warning
 Input pipelining  
+DSP color_instance/read_address0__2 input color_instance/read_address0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP color_instance/read_address0__2 input color_instance/read_address0__2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
 DSP color_instance/read_address1 input color_instance/read_address1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 PDCN-137#1 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y0 has BlockRam (color_instance/nolabel_line123/mem_reg_4_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y0 has BlockRam (color_instance/nolabel_line142/mem_reg_6_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#2 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y1 has BlockRam (color_instance/nolabel_line123/mem_reg_5_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y1 has BlockRam (color_instance/nolabel_line142/mem_reg_7_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#3 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y10 has BlockRam (color_instance/nolabel_line123/mem_reg_6_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y14 has BlockRam (color_instance/nolabel_line142/mem_reg_6_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#4 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y11 has BlockRam (color_instance/nolabel_line123/mem_reg_7_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y15 has BlockRam (color_instance/nolabel_line142/mem_reg_7_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#5 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y12 has BlockRam (color_instance/nolabel_line123/mem_reg_6_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y16 has BlockRam (color_instance/nolabel_line142/mem_reg_0_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#6 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y13 has BlockRam (color_instance/nolabel_line123/mem_reg_7_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y17 has BlockRam (color_instance/nolabel_line142/mem_reg_1_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#7 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y14 has BlockRam (color_instance/nolabel_line123/mem_reg_2_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y18 has BlockRam (color_instance/nolabel_line142/mem_reg_8_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#8 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y15 has BlockRam (color_instance/nolabel_line123/mem_reg_3_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y19 has BlockRam (color_instance/nolabel_line142/mem_reg_9_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#9 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y16 has BlockRam (color_instance/nolabel_line123/mem_reg_8_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y2 has BlockRam (color_instance/nolabel_line142/mem_reg_4_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#10 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y17 has BlockRam (color_instance/nolabel_line123/mem_reg_9_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y20 has BlockRam (color_instance/nolabel_line142/mem_reg_8_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#11 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y18 has BlockRam (color_instance/nolabel_line123/mem_reg_8_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y21 has BlockRam (color_instance/nolabel_line142/mem_reg_9_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#12 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y19 has BlockRam (color_instance/nolabel_line123/mem_reg_9_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y3 has BlockRam (color_instance/nolabel_line142/mem_reg_5_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#13 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y2 has BlockRam (color_instance/nolabel_line123/mem_reg_4_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y4 has BlockRam (color_instance/nolabel_line142/mem_reg_2_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#14 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y20 has BlockRam (color_instance/nolabel_line123/mem_reg_0_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X0Y5 has BlockRam (color_instance/nolabel_line142/mem_reg_3_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#15 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y21 has BlockRam (color_instance/nolabel_line123/mem_reg_1_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y0 has BlockRam (color_instance/nolabel_line142/mem_reg_6_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#16 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y22 has BlockRam (color_instance/nolabel_line123/mem_reg_0_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y1 has BlockRam (color_instance/nolabel_line142/mem_reg_7_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#17 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y23 has BlockRam (color_instance/nolabel_line123/mem_reg_1_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y12 has BlockRam (color_instance/nolabel_line142/mem_reg_2_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#18 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y3 has BlockRam (color_instance/nolabel_line123/mem_reg_5_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y13 has BlockRam (color_instance/nolabel_line142/mem_reg_3_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#19 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y4 has BlockRam (color_instance/nolabel_line123/mem_reg_4_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y16 has BlockRam (color_instance/nolabel_line142/mem_reg_0_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#20 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y5 has BlockRam (color_instance/nolabel_line123/mem_reg_5_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y17 has BlockRam (color_instance/nolabel_line142/mem_reg_1_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#21 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y6 has BlockRam (color_instance/nolabel_line123/mem_reg_0_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y18 has BlockRam (color_instance/nolabel_line142/mem_reg_0_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#22 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y7 has BlockRam (color_instance/nolabel_line123/mem_reg_1_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y19 has BlockRam (color_instance/nolabel_line142/mem_reg_1_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#23 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y8 has BlockRam (color_instance/nolabel_line123/mem_reg_0_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y2 has BlockRam (color_instance/nolabel_line142/mem_reg_4_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#24 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X0Y9 has BlockRam (color_instance/nolabel_line123/mem_reg_1_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y3 has BlockRam (color_instance/nolabel_line142/mem_reg_5_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#25 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X1Y10 has BlockRam (color_instance/nolabel_line123/mem_reg_4_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y4 has BlockRam (color_instance/nolabel_line142/mem_reg_4_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#26 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X1Y11 has BlockRam (color_instance/nolabel_line123/mem_reg_5_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X1Y5 has BlockRam (color_instance/nolabel_line142/mem_reg_5_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#27 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X1Y12 has BlockRam (color_instance/nolabel_line123/mem_reg_2_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y0 has BlockRam (color_instance/nolabel_line142/mem_reg_6_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#28 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X1Y13 has BlockRam (color_instance/nolabel_line123/mem_reg_3_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y1 has BlockRam (color_instance/nolabel_line142/mem_reg_7_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#29 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X1Y14 has BlockRam (color_instance/nolabel_line123/mem_reg_2_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y12 has BlockRam (color_instance/nolabel_line142/mem_reg_0_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#30 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X1Y15 has BlockRam (color_instance/nolabel_line123/mem_reg_3_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y13 has BlockRam (color_instance/nolabel_line142/mem_reg_1_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#31 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X1Y18 has BlockRam (color_instance/nolabel_line123/mem_reg_8_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y16 has BlockRam (color_instance/nolabel_line142/mem_reg_8_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#32 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X1Y19 has BlockRam (color_instance/nolabel_line123/mem_reg_9_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y17 has BlockRam (color_instance/nolabel_line142/mem_reg_9_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#33 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X2Y10 has BlockRam (color_instance/nolabel_line123/mem_reg_6_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y18 has BlockRam (color_instance/nolabel_line142/mem_reg_8_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#34 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X2Y11 has BlockRam (color_instance/nolabel_line123/mem_reg_7_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y19 has BlockRam (color_instance/nolabel_line142/mem_reg_9_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#35 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X2Y12 has BlockRam (color_instance/nolabel_line123/mem_reg_6_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y2 has BlockRam (color_instance/nolabel_line142/mem_reg_4_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#36 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X2Y13 has BlockRam (color_instance/nolabel_line123/mem_reg_7_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y3 has BlockRam (color_instance/nolabel_line142/mem_reg_5_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#37 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X2Y14 has BlockRam (color_instance/nolabel_line123/mem_reg_2_2) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y4 has BlockRam (color_instance/nolabel_line142/mem_reg_2_1) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#38 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X2Y15 has BlockRam (color_instance/nolabel_line123/mem_reg_3_2) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y5 has BlockRam (color_instance/nolabel_line142/mem_reg_3_1) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#39 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X2Y18 has BlockRam (color_instance/nolabel_line123/mem_reg_8_0) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y6 has BlockRam (color_instance/nolabel_line142/mem_reg_2_3) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 PDCN-137#40 Warning
 enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
-RAMB36E1 site RAMB36_X2Y19 has BlockRam (color_instance/nolabel_line123/mem_reg_9_0) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+RAMB36E1 site RAMB36_X2Y7 has BlockRam (color_instance/nolabel_line142/mem_reg_3_3) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
 Related violations: <none>
 
 

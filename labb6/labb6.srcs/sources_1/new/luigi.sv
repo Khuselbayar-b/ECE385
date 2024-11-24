@@ -23,7 +23,7 @@
 module luigi(
 input  logic        Reset, 
     input  logic        frame_clk,
-    input  logic [7:0]  keycode,
+    input  logic [7:0]  keycode0,  keycode1, keycode2, keycode3,
 
     output logic [9:0]  LuigiX, 
     output logic [9:0]  LuigiY, 
@@ -36,7 +36,7 @@ input  logic        Reset,
      parameter int GROUND_Y = 270;
 	 parameter int GRAVITY = 20'd2;
 	 
-    parameter [9:0] Ball_X_Center=450;  // Center position on the X axis
+    parameter [9:0] Ball_X_Center=400;  // Center position on the X axis
     parameter [9:0] Ball_Y_Center=210;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
@@ -63,7 +63,7 @@ input  logic        Reset,
         Ball_Y_Motion_next = 0;
         
         
-        if (keycode == 8'h52 && (LuigiY + 60) == 270) // UP
+        if ((keycode0 == 8'h52 || keycode1 == 8'h52 || keycode2 == 8'h52 || keycode3 == 8'h52) && (LuigiY + 60 == 270)) // UP
             begin
                 Ball_Y_Motion_next = -20'd80;
                 Ball_X_Motion_next = 0;
@@ -74,19 +74,19 @@ input  logic        Reset,
 //                Ball_X_Motion_next = 0;
 //            end
             
-        else if (keycode == 8'h50) // left
+        else if ((keycode0 == 8'h50 || keycode1 == 8'h50 || keycode2 == 8'h50 || keycode3 == 8'h50)) // left
             begin
                 Ball_X_Motion_next = -20'd2;
                 Ball_Y_Motion_next = 0;
                 left2 = 1'b1;
             end
-        else if (keycode == 8'h4F) // right
+        else if ((keycode0 == 8'h4F || keycode1 == 8'h4F || keycode2 == 8'h4F || keycode3 == 8'h4F)) // right
             begin
                 Ball_X_Motion_next = 20'd2;
                 Ball_Y_Motion_next = 0;
                 right2 = 1'b1;
             end
-         else if (keycode == 8'h28) // enter 
+         else if ((keycode0 == 8'h28 || keycode1 == 8'h28 || keycode2 == 8'h28 || keycode3 == 8'h28)) // enter 
             begin
                 punch2 = 1'b1;
             end

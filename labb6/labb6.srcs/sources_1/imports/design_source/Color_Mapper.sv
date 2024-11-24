@@ -24,20 +24,21 @@ module  color_mapper (
 
     logic [11:0] spritePixel;        // Pixel value from the sprite sheet
     logic [18:0] marioIndex, luigiIndex; 
-    logic [18:0] marioPunchIndex; 
+    logic [18:0] marioPunchIndex, luigiPunchIndex; 
     logic [8:0] spriteX;
     logic [8:0] spriteLuigiX;
-    logic [8:0] spriteMarioPunchX;
+    logic [8:0] spriteMarioPunchX,spriteLuigiPunchX;
     
     logic  [2:0] sprite_index;
     logic  [2:0] punch_sprite_index;
+    
     
 
 
     localparam int FRAME_DELAY = 1048575; // Adjust for your clock frequency and desired frame rate
     localparam int MAX_INDEX = 7;           // Maximum sprite index
 
-    // Registers
+    // Sprite Sheet Index Counter
     logic [19:0] frame_counter; // 24-bit counter for delay (example size)
     
     always_ff @(posedge Clk) begin
@@ -57,6 +58,7 @@ module  color_mapper (
             end
     end
     
+
     
     //Mario on Logic
     always_comb begin
@@ -100,21 +102,38 @@ module  color_mapper (
         end else 
             spriteLuigiX = (DrawX - luigiX); 
           
-       // spriteMarioPunchX = (DrawX - luigiX) + (60 * punch_sprite_index);  
-      //  marioPunchIndex = (DrawY - BallY) * 360 + spriteMarioPunchX;
+        spriteLuigiPunchX = (60 - (DrawX - luigiX)) + (60 * punch_sprite_index[1:0]);  
+        luigiPunchIndex = (DrawY - luigiY) * 240 + spriteLuigiPunchX;
         
         luigiIndex = (DrawY - luigiY) * 360 + spriteLuigiX;
     end
     
+    
+    //Luigi Sprite BRAM logic
     logic [3:0] luigi_run_ind;
     logic [11:0] luigi_out;
     
     luigiRunRAM(.data_In(12'h0000), .write_address(12'h0000), .read_address(luigiIndex), .we(1'b0), .Clk(Clk), .data_Out(luigi_run_ind)
     );
     
-    marioColors(.index(luigi_run_ind), .color_out(luigi_out));
+    logic [3:0] luigi_punch_color_indx;
     
-   // logic [23:0] data_out;
+    luigiPunchRAM(.data_In(12'h0000), .write_address(12'h0000), .read_address(luigiPunchIndex), .we(1'b0), .Clk(Clk), .data_Out(luigi_punch_color_indx)
+    );
+    
+    logic [3:0] luigi_color_ind;
+    
+    always_comb begin
+        if (punch2)
+            luigi_color_ind = luigi_punch_color_indx;
+        else 
+            luigi_color_ind = luigi_run_ind;
+    end
+    
+    marioColors(.index(luigi_color_ind), .color_out(luigi_out));
+  
+    
+   //Background Sprite BRAM logic
     logic [18:0] index;
     assign index = DrawY*640 + DrawX; 
     logic [3:0] color_ind;
@@ -127,6 +146,8 @@ module  color_mapper (
     
     logic [3:0] mario_run_ind;
     logic [11:0] mario_out;
+    
+    // Mario Sprite BRAM logic
     
     marioRunRAM(.data_In(12'h0000), .write_address(12'h0000), .read_address(marioIndex), .we(1'b0), .Clk(Clk), .data_Out(mario_run_ind)
     );
@@ -147,7 +168,7 @@ module  color_mapper (
     
     marioColors(.index(mario_color_ind), .color_out(mario_out));
     
-    
+    // VGA RGB writes
     always_comb
     begin:RGB_Display
         if ((ball_on == 1'b1) && (mario_out != 12'h808)) begin
