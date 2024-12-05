@@ -219,3 +219,36 @@ platform generate
 platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
 platform clean
 platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform generate -domains standalone_microblaze_0 
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
+platform config -updatehw {C:/Users/kb40/Desktop/ECE385/labb6/final_top.xsa}
+platform clean
+platform generate
