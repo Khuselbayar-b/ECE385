@@ -91,16 +91,16 @@ input  logic        Reset,
                 punch2 = 1'b1;
             end
             
-         if ((LuigiY+60) < GROUND_Y || (LuigiX < 70) || (LuigiX+60) > 570) begin
+         if ((LuigiY+60) != GROUND_Y || (LuigiX < 70) || (LuigiX+60) > 570) begin
                 Ball_Y_Motion_next = Ball_Y_Motion_next + GRAVITY;
          end 
 
         Ball_Y_next = LuigiY + Ball_Y_Motion_next;
         
-        if ((LuigiY+60 > GROUND_Y) && (LuigiX > 70) && LuigiX+60 < 570) begin
-                Ball_Y_Motion_next = 0;    // Stop vertical motion
-                Ball_Y_next = Ball_Y_Center;   // Snap to ground
-         end 
+//        if ((LuigiY+60 > GROUND_Y) && (LuigiX > 70) && LuigiX+60 < 570) begin
+//                Ball_Y_Motion_next = 0;    // Stop vertical motion
+//                Ball_Y_next = Ball_Y_Center;   // Snap to ground
+//         end 
     end
 
 

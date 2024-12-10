@@ -43,7 +43,7 @@ module mb_usb_hdmi_top(
     logic [31:0] keycode0_gpio, keycode1_gpio;
     logic clk_25MHz, clk_125MHz, clk, clk_100MHz;
     logic locked;
-    logic [9:0] drawX, drawY, ballxsig, ballysig, luigixsig, luigiysig;
+    logic [9:0] drawX, drawY, ballxsig, ballysig, luigixsig, luigiysig, luigi_health, mario_health;
 
     logic hsync, vsync, vde;
     logic [3:0] red, green, blue;
@@ -56,7 +56,7 @@ module mb_usb_hdmi_top(
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[31:28], keycode0_gpio[27:24], keycode0_gpio[23:20], keycode0_gpio[19:16]}),
+        .in({4'h0, mario_health[9:8], mario_health[7:4], mario_health[3:0]}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -64,7 +64,7 @@ module mb_usb_hdmi_top(
     hex_driver HexB (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[15:12], keycode0_gpio[11:8], keycode0_gpio[7:4], keycode0_gpio[3:0]}),
+        .in({4'h0, luigi_health[9:8], luigi_health[7:4], luigi_health[3:0]}),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );
@@ -186,7 +186,9 @@ module mb_usb_hdmi_top(
         .DrawY(drawY),
         .Red(red),
         .Green(green),
-        .Blue(blue)
+        .Blue(blue),
+        .mario_health(mario_health),
+        .luigi_health(luigi_health)
     );
     
 endmodule

@@ -86,17 +86,17 @@ module  ball
             begin
                 punch1 = 1'b1;
             end
-            
-         if ((BallY+60) < GROUND_Y || (BallX < 70) || (BallX+60) > 570) begin
+
+         if ((BallY+60) != GROUND_Y || (BallX < 70) || (BallX+60) > 570) begin
                 Ball_Y_Motion_next = Ball_Y_Motion_next + GRAVITY;
          end 
 
         Ball_Y_next = BallY + Ball_Y_Motion_next;
         
-        if ((BallY+60 > GROUND_Y) && (BallX > 70) && BallX+60 < 570) begin
-                Ball_Y_Motion_next = 0;    // Stop vertical motion
-                Ball_Y_next = Ball_Y_Center;   // Snap to ground
-         end 
+//        if ((BallY+60 > GROUND_Y) && (BallX > 70) && BallX+60 < 570) begin
+//                Ball_Y_Motion_next = 0;    // Stop vertical motion
+//                Ball_Y_next = Ball_Y_Center;   // Snap to ground
+//         end 
     end
 
 
